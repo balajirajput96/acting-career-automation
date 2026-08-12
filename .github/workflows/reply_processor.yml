@@ -1,0 +1,29 @@
+name: Process Issue Comments for Lead Status
+
+on:
+  issue_comment:
+    types: [created]
+
+jobs:
+  process_comment:
+    runs-on: ubuntu-latest
+    if: github.event.issue.pull_request == null # Only run for issues, not pull requests
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: pip install -r scripts/requirements.txt
+
+      - name: Process comment
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+          COMMENT_BODY: ${{ github.event.comment.body }}
+        run: python scripts/reply_processor.py # This script needs to be created

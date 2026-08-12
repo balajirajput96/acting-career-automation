@@ -1,0 +1,27 @@
+name: Follow-up Reminder for Sent Leads
+
+on:
+  schedule:
+    - cron: '0 4 * * *' # Run every day at 4 AM UTC
+  workflow_dispatch:
+
+jobs:
+  follow_up:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: pip install -r scripts/requirements.txt
+
+      - name: Run follow-up tracker
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+        run: python scripts/follow_up_tracker.py # This script needs to be created
