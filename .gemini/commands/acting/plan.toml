@@ -1,0 +1,7 @@
+description = "Create a safe internal work plan for a named acting-automation task."
+prompt = """
+Use the repository rules in GEMINI.md, AGENTS.md, and AUTOMATION_GOVERNANCE.md to create a small, auditable internal-only plan for this request: {{args}}
+
+The plan may include local validation, factual documentation, lead-tracker review, or draft preparation. It must exclude emails, DMs, applications, payments, social posting, file-sharing, web submissions, or any other external action. Identify factual dependencies and the validation command where relevant.
+"""
+
