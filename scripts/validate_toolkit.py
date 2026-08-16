@@ -6,6 +6,8 @@ import csv
 import sys
 from pathlib import Path
 
+from validate_video_queue import validate_video_queue
+
 
 ROOT = Path(__file__).resolve().parents[1]
 EXPECTED_LEAD_HEADER = [
@@ -69,6 +71,7 @@ def main() -> None:
     validate_required_files()
     validate_lead_header()
     validate_templates()
+    validate_video_queue()
     print("PASS: Toolkit files, lead schema, templates, and internal AI workflow assets are valid.")
 
 
