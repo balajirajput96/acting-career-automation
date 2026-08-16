@@ -25,4 +25,4 @@ No tool in this workflow may send an email, direct message, application, payment
 
 ## Account-specific setup status
 
-The Antigravity and Gemini CLI local configurations are ready. The Google Jules maintenance prompt is ready for use after the logged-in Jules session confirms access to `balajirajput96/acting-career-automation`. Other Google surfaces, including Spark, AI Studio, Drive, and Workspace, should only receive internal planning or storage tasks after their individual account pages are available.
+The Antigravity and Gemini CLI local configurations are ready through the configured Gemini credential route. Google Workspace Drive access has been verified with a read-only metadata request. The Google Jules maintenance prompt is ready for use after the logged-in Jules session confirms access to `balajirajput96/acting-career-automation`. Google-account OAuth callbacks for the local terminal CLI sessions have not reached the terminal, so Spark and AI Studio remain browser-surface setup tasks rather than connected local CLI sessions.
