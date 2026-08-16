@@ -26,6 +26,12 @@ REQUIRED_FILES = [
     "templates/dm_template.md",
     "templates/followup_template.md",
     "profile_kit/CHECKLIST.md",
+    "GEMINI.md",
+    "JULES_DAILY_MAINTENANCE_PROMPT.md",
+    "CLI_AND_JULES_AUTOMATION_MANIFEST.md",
+    ".agents/agents/acting-automation-operator/agent.md",
+    ".gemini/commands/acting/status.toml",
+    ".gemini/commands/acting/plan.toml",
 ]
 
 
@@ -60,7 +66,7 @@ def main() -> None:
     validate_required_files()
     validate_lead_header()
     validate_templates()
-    print("PASS: Toolkit files, lead schema, and email template placeholders are valid.")
+    print("PASS: Toolkit files, lead schema, templates, and internal AI workflow assets are valid.")
 
 
 if __name__ == "__main__":
