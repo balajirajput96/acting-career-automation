@@ -11,13 +11,15 @@ This manifest keeps internal acting-career automation organized across the avail
 | GitHub Actions | Daily toolkit validation and repository-local workflow checks. | No issue or pull-request closure, and no external outreach. |
 | Twice-Daily Casting Desk | Active recurring research, screening, shortlist maintenance, and factual preparation workflow. | Runs at 05:58 Asia/Kolkata; reviews at most 10 sources per run and 20 per day; no outbound actions. |
 | Google Jules | Daily repository-local maintenance prompt is prepared in `JULES_DAILY_MAINTENANCE_PROMPT.md`. | Connect the repository in Jules, use a new branch or pull request, and leave merge decisions manual. |
+| Gemini Spark | Daily internal readiness prompt is prepared in `GEMINI_SPARK_DAILY_READINESS_PROMPT.md`. | Intended for 13:00 Asia/Kolkata internal review only; it must not duplicate source research or take external actions. |
 
 ## Daily sequence
 
 1. GitHub Actions validates scripts, lead schema, and templates.
 2. Google Jules may run the prepared repository-local maintenance prompt after the GitHub check completes.
 3. The Twice-Daily Casting Desk performs public-source research and factual preparation within its documented limits.
-4. Antigravity CLI and Gemini CLI are available for internal review, validation, and planning between scheduled runs.
+4. Gemini Spark may perform the prepared internal readiness review at 13:00 Asia/Kolkata when its browser scheduling control is available.
+5. Antigravity CLI and Gemini CLI are available for internal review, validation, and planning between scheduled runs.
 
 ## Mandatory boundary
 
@@ -25,4 +27,4 @@ No tool in this workflow may send an email, direct message, application, payment
 
 ## Account-specific setup status
 
-The Antigravity and Gemini CLI local configurations are ready through the configured Gemini credential route. Google Workspace Drive access has been verified with a read-only metadata request. The Google Jules maintenance prompt is ready for use after the logged-in Jules session confirms access to `balajirajput96/acting-career-automation`. Google-account OAuth callbacks for the local terminal CLI sessions have not reached the terminal, so Spark and AI Studio remain browser-surface setup tasks rather than connected local CLI sessions.
+The Antigravity and Gemini CLI local configurations are ready through the configured Gemini credential route. Google Workspace Drive access has been verified with a read-only metadata request. The Google Jules maintenance prompt is ready for use after the logged-in Jules session confirms access to `balajirajput96/acting-career-automation`. The Gemini Spark daily-readiness prompt is published and validated in GitHub; its actual schedule still depends on the signed-in browser Spark controls becoming available. Google-account OAuth callbacks for the local terminal CLI sessions have not reached the terminal, so Spark and AI Studio remain browser-surface setup tasks rather than connected local CLI sessions.
