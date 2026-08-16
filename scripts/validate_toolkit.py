@@ -29,6 +29,7 @@ REQUIRED_FILES = [
     "GEMINI.md",
     "GEMINI_SPARK_DAILY_READINESS_PROMPT.md",
     "DAILY_OPERATIONS_PROFILE.md",
+    "DAILY_EDUCATIONAL_VIDEO_PIPELINE.md",
     "JULES_DAILY_MAINTENANCE_PROMPT.md",
     "CLI_AND_JULES_AUTOMATION_MANIFEST.md",
     ".agents/agents/acting-automation-operator/agent.md",
