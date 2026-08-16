@@ -11,7 +11,7 @@ This is the repository's single daily reference for the acting-career automation
 | 02:30 UTC / 08:00 IST | GitHub Toolkit Health Check | Compile Python scripts and validate lead schema, templates, and internal automation assets. | No outreach or external submission. |
 | 03:00 UTC | GitHub Draft Generator | Process repository lead state and produce internal draft material where applicable. | Drafts remain inside GitHub for manual review. |
 | 04:00 UTC | GitHub Follow-up Tracker | Identify repository-tracked lead follow-up conditions and add internal reminders. | No message is sent externally. |
-| 05:58 Asia/Kolkata | Twice-Daily Casting Desk | Bounded public-source research, scam screening, shortlist maintenance, and factual preparation. | Maximum 10 sources per run and 20 per day; no external action. |
+| 05:58 Asia/Kolkata | Daily Casting and Educational Video Desk | Bounded public-source research, scam screening, shortlist maintenance, factual preparation, and one internal 60-second educational-video package. | Maximum 10 sources per run and 20 per day; video package stays in the review queue and no external action is allowed. |
 | 13:00 Asia/Kolkata | Gemini Spark Readiness Review | Prepared internal readiness review using `GEMINI_SPARK_DAILY_READINESS_PROMPT.md`. | The browser-side Spark schedule must be confirmed before it becomes active; no duplicate research or outreach. |
 
 ## Code and Workflow Assets
@@ -23,6 +23,8 @@ This is the repository's single daily reference for the acting-career automation
 | `scripts/follow_up_tracker.py` | Adds internal follow-up tracking reminders for eligible issue state. |
 | `scripts/reply_processor.py` | Processes approved repository issue commands without closing issues. |
 | `scripts/validate_toolkit.py` | Daily validator for scripts, source files, templates, and internal AI workflow assets. |
+| `scripts/validate_video_queue.py` | Deterministically validates that internal educational-video packages have sources, scripts, scenes, captions, identity checks, and a not-published state. |
+| `DAILY_EDUCATIONAL_VIDEO_PIPELINE.md` | Evidence, identity, format, and review-queue standard for daily educational-video preparation. |
 | `.github/workflows/` | Durable scheduled and event-driven GitHub workflow definitions. |
 | `GEMINI.md` | Shared safe operating rules for Gemini CLI and Antigravity CLI. |
 | `.agents/agents/acting-automation-operator/agent.md` | Antigravity workspace agent instructions. |
