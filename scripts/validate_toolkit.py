@@ -27,6 +27,7 @@ REQUIRED_FILES = [
     "templates/followup_template.md",
     "profile_kit/CHECKLIST.md",
     "GEMINI.md",
+    "GEMINI_SPARK_DAILY_READINESS_PROMPT.md",
     "JULES_DAILY_MAINTENANCE_PROMPT.md",
     "CLI_AND_JULES_AUTOMATION_MANIFEST.md",
     ".agents/agents/acting-automation-operator/agent.md",
