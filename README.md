@@ -76,6 +76,21 @@ acting-career-automation/
     *   Check `lead-sent` issues.
     *   If an issue was created more than 7 days ago (and hasn't been followed up), it will add a `follow-up-needed` label and a comment reminding you to follow up.
 
+## Automation Control Plane
+
+GitHub is the durable home for repository-local automation. The scheduled workflows keep running when a local terminal session is closed, while the terminal tools use the repository rules and assets below for internal work.
+
+| Asset | Purpose |
+| --- | --- |
+| `.github/workflows/toolkit_health.yml` | Daily health check for scripts, lead schema, templates, and internal AI workflow assets. |
+| `GEMINI.md` | Shared operating rules for Gemini CLI and Antigravity CLI. |
+| `.agents/agents/acting-automation-operator/agent.md` | Workspace-specific Antigravity agent for safe internal review and maintenance. |
+| `.gemini/commands/acting/` | Reusable Gemini CLI internal status and planning commands. |
+| `JULES_DAILY_MAINTENANCE_PROMPT.md` | Repository-local daily maintenance prompt for Google Jules after repository connection. |
+| `CLI_AND_JULES_AUTOMATION_MANIFEST.md` | Current cross-tool roles, daily sequence, and mandatory no-outbound boundary. |
+
+The active recurring casting workflow remains the separate research and shortlist-maintenance process. Do not create duplicate public-source research schedules in GitHub, Jules, Antigravity, or Gemini CLI.
+
 ## Important Behavior Rules
 
 *   **No Auto-Closing Issues:** The `reply_processor.yml` workflow will *never* close issues. It only applies labels and facilitates project board movement.
