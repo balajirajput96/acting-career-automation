@@ -45,6 +45,10 @@ The Instagram Reel `CMcBy1JhbYk` is an optional general portfolio link only when
 | Google Jules | Prepared repository maintenance prompt; browser task controls must be verified before a Jules schedule is active. |
 | Gemini Spark | Prepared daily readiness prompt; browser schedule controls must be verified before the 13:00 schedule is active. |
 
+## Schedule Reconciliation
+
+The active GitHub schedules already cover daily health validation, draft preparation, and follow-up tracking. The active Manus casting workflow already covers bounded casting research and shortlist maintenance. Therefore, this profile does not add another terminal or repository research schedule. This avoids duplicate public-source checks and preserves the maximum of 20 reviewed sources per day. Spark and Jules schedules remain prepared but inactive until their signed-in browser controls can be verified.
+
 ## Non-Outbound Safeguard
 
 No component may send an email, direct message, WhatsApp message, application, payment, post, document, video, portfolio link, or file externally. Any future external submission requires a complete truthful package and a context-specific final safeguard.
