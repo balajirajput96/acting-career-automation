@@ -24,22 +24,8 @@ jobs:
       - name: Compile Python scripts
         run: python -m compileall -q scripts
 
-      - name: Validate lead tracker schema
-        run: |
-          python - <<'PY'
-          import csv
-          from pathlib import Path
-
-          expected = [
-              "id", "date_found", "source", "project", "role",
-              "contact_type", "contact", "status", "notes",
-          ]
-          with Path("data/casting_leads.csv").open(newline="", encoding="utf-8") as handle:
-              header = next(csv.reader(handle), [])
-          if header != expected:
-              raise SystemExit(f"Unexpected CSV header: {header!r}")
-          print("Lead tracker schema is valid.")
-          PY
+      - name: Validate toolkit inputs
+        run: python scripts/validate_toolkit.py
 
       - name: Publish safe job summary
         run: |

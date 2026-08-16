@@ -1,0 +1,67 @@
+"""Validate repository-local acting-career automation inputs without external actions."""
+
+from __future__ import annotations
+
+import csv
+import sys
+from pathlib import Path
+
+
+ROOT = Path(__file__).resolve().parents[1]
+EXPECTED_LEAD_HEADER = [
+    "id",
+    "date_found",
+    "source",
+    "project",
+    "role",
+    "contact_type",
+    "contact",
+    "status",
+    "notes",
+]
+REQUIRED_FILES = [
+    "data/casting_leads.csv",
+    "data/casting_leads.sample.csv",
+    "templates/email_template.md",
+    "templates/dm_template.md",
+    "templates/followup_template.md",
+    "profile_kit/CHECKLIST.md",
+]
+
+
+def fail(message: str) -> None:
+    print(f"FAIL: {message}")
+    raise SystemExit(1)
+
+
+def validate_required_files() -> None:
+    missing = [path for path in REQUIRED_FILES if not (ROOT / path).is_file()]
+    if missing:
+        fail(f"Missing required toolkit files: {', '.join(missing)}")
+
+
+def validate_lead_header() -> None:
+    csv_path = ROOT / "data" / "casting_leads.csv"
+    with csv_path.open(newline="", encoding="utf-8") as handle:
+        header = next(csv.reader(handle), [])
+    if header != EXPECTED_LEAD_HEADER:
+        fail(f"Unexpected casting_leads.csv header: {header!r}")
+
+
+def validate_templates() -> None:
+    email_template = (ROOT / "templates" / "email_template.md").read_text(encoding="utf-8")
+    required_placeholders = ("{{name}}", "{{role}}", "{{source}}", "{{project}}")
+    missing = [placeholder for placeholder in required_placeholders if placeholder not in email_template]
+    if missing:
+        fail(f"Email template is missing placeholders: {', '.join(missing)}")
+
+
+def main() -> None:
+    validate_required_files()
+    validate_lead_header()
+    validate_templates()
+    print("PASS: Toolkit files, lead schema, and email template placeholders are valid.")
+
+
+if __name__ == "__main__":
+    main()
