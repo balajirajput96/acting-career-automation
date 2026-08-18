@@ -4,6 +4,10 @@ on:
   issue_comment:
     types: [created]
 
+permissions:
+  contents: read
+  issues: write
+
 jobs:
   process_comment:
     runs-on: ubuntu-latest
@@ -26,4 +30,4 @@ jobs:
           GITHUB_REPOSITORY: ${{ github.repository }}
           ISSUE_NUMBER: ${{ github.event.issue.number }}
           COMMENT_BODY: ${{ github.event.comment.body }}
-        run: python scripts/reply_processor.py # This script needs to be created
+        run: python scripts/reply_processor.py
