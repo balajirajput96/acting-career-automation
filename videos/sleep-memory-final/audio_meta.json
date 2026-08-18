@@ -1,0 +1,17 @@
+{
+  "tts_provider": "manus-generate_speech",
+  "voice_id": "Charon",
+  "bgm": null,
+  "bgm_pending": false,
+  "bgm_provider": null,
+  "voices": [
+    {
+      "id": "01",
+      "path": "assets/voice/01.wav",
+      "duration_s": 44.4,
+      "words": []
+    }
+  ],
+  "sfx": [],
+  "total_duration_s": 60
+}
