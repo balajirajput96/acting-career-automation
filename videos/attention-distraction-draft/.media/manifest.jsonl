@@ -1,0 +1,3 @@
+{"asset":"assets/images/primary-anchor.png","type":"image","origin":"Generated faceless science visual","use":"Background anchor","status":"INTERNAL REVIEW ONLY"}
+{"asset":"assets/voice/01.wav","type":"audio","origin":"Generated neutral TTS narration","use":"Off-screen narration","status":"INTERNAL REVIEW ONLY"}
+{"asset":"assets/js/gsap.min.js","type":"script","origin":"Local animation runtime","use":"Composition timing","status":"INTERNAL REVIEW ONLY"}
