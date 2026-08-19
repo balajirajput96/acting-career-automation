@@ -1,0 +1,39 @@
+<!doctype html>
+<!-- Design reminder: faceless editorial health-literacy composition; calm, non-diagnostic, high-contrast. -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1920" />
+    <title>Stress and Body Signals — Internal Preview</title>
+    <script src="assets/js/gsap.min.js"></script>
+    <style>
+      :root { --ink:#12283a; --paper:#f5eee3; --clay:#b96b4d; --amber:#d59a53; --sky:#5d90a6; --cream:#fffaf4; --muted:#526a76; }
+      html,body{margin:0;width:100%;height:100%;background:#0e1a22;font-family:Arial,sans-serif}
+      #root{position:relative;width:1080px;height:1920px;overflow:hidden;color:var(--ink)}
+      .base{position:absolute;inset:0;background:var(--paper)} .base img{width:100%;height:100%;object-fit:cover;opacity:.18;filter:saturate(.75) contrast(.9);transform:scale(1.08)} .base::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(245,238,227,.52),rgba(245,238,227,.96))}
+      .clip{position:absolute;inset:0;overflow:hidden}.scene{position:absolute;inset:0;padding:125px 78px 250px;display:flex;flex-direction:column;justify-content:space-between}.eyebrow{font-size:31px;letter-spacing:6px;text-transform:uppercase;font-weight:700;color:var(--clay)}h1{font-size:104px;line-height:.96;letter-spacing:-4px;margin:0}h2{font-size:73px;line-height:1.03;letter-spacing:-2px;margin:0}p{margin:0;font-size:41px;line-height:1.3;color:var(--muted)}.card{border:3px solid rgba(18,40,58,.18);border-radius:38px;background:rgba(255,250,244,.9);padding:38px;box-shadow:0 22px 70px rgba(18,40,58,.1)}.accent{width:160px;height:10px;border-radius:9px;background:var(--clay)}
+      .body-map{position:relative;height:760px;border-radius:48px;background:radial-gradient(circle at 50% 42%,#fffaf4 0,#ecdcc9 64%,#d6c2ae 100%);overflow:hidden}.torso{position:absolute;left:50%;top:78px;width:360px;height:570px;transform:translateX(-50%);border:12px solid var(--ink);border-radius:170px 170px 110px 110px;opacity:.78}.signal{position:absolute;border-radius:50%;border:10px solid var(--clay);box-shadow:0 0 0 18px rgba(185,107,77,.12)}.signal.one{width:110px;height:110px;left:290px;top:120px}.signal.two{width:140px;height:100px;right:225px;top:236px}.signal.three{width:130px;height:100px;left:285px;bottom:120px}.label{position:absolute;background:var(--ink);color:var(--cream);border-radius:18px;padding:14px 20px;font-size:30px;font-weight:700}.l1{left:90px;top:100px}.l2{right:60px;top:230px}.l3{left:70px;bottom:110px}
+      .flow{display:flex;flex-direction:column;gap:22px}.flow-item{background:var(--ink);color:var(--cream);padding:29px 32px;border-radius:28px;font-size:47px;font-weight:700}.arrow{text-align:center;color:var(--clay);font-size:46px}.split{display:grid;grid-template-columns:1fr 1fr;gap:24px}.symbol{font-size:88px;color:var(--clay);font-weight:700}.quote{font-size:47px;line-height:1.16;color:var(--ink);font-weight:700}.source{font-size:29px;line-height:1.35;color:var(--muted)}.disclaimer{font-size:37px;line-height:1.26;color:var(--ink);font-weight:700}.caption{position:absolute;left:68px;right:68px;bottom:82px;border-radius:26px;padding:22px 28px;background:rgba(10,30,41,.93);color:var(--cream);font-size:38px;font-weight:700;line-height:1.2;text-align:center}
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="stress-body" data-start="0" data-width="1080" data-height="1920" data-duration="60">
+      <div class="base"><img id="bg-anchor" src="assets/images/primary-anchor.png" alt="" /></div>
+      <audio id="narration" data-start="0" data-duration="45.48" data-track-index="3" src="assets/voice/01.wav" data-volume="1"></audio>
+      <section id="clip-01" class="clip" data-start="0" data-duration="10" data-track-index="1"><div class="scene"><div><div class="eyebrow">Stress literacy</div><div class="accent"></div></div><div class="card"><h1>Stress sirf thoughts mein nahi hota.</h1><p>Body bhi signals ke zariye react kar sakti hai.</p></div><div class="caption">Stress body mein bhi signals create kar sakta hai</div></div></section>
+      <section id="clip-02" class="clip" data-start="10" data-duration="11" data-track-index="1"><div class="scene"><div><div class="eyebrow">Common signals</div><h2>Notice, don’t diagnose.</h2></div><div class="body-map"><div class="torso"></div><div class="signal one"></div><div class="signal two"></div><div class="signal three"></div><div class="label l1">Head</div><div class="label l2">Shoulders</div><div class="label l3">Stomach</div></div><div class="caption">Tension, stiffness, headache, rapid breathing</div></div></section>
+      <section id="clip-03" class="clip" data-start="21" data-duration="11" data-track-index="1"><div class="scene"><div><div class="eyebrow">Body response</div><h2>Signals can vary.</h2></div><div class="split"><div class="card"><div class="symbol">≈</div><div class="quote">Breathing may feel faster.</div></div><div class="card"><div class="symbol">○</div><div class="quote">Stomach discomfort or fatigue can happen.</div></div></div><div class="caption">Body signals vary from person to person</div></div></section>
+      <section id="clip-04" class="clip" data-start="32" data-duration="14" data-track-index="1"><div class="scene"><div><div class="eyebrow">Why it happens</div><h2>Fight-or-flight is a body response.</h2></div><div class="flow"><div class="flow-item">Stress signal</div><div class="arrow">↓</div><div class="flow-item">Nervous system response</div><div class="arrow">↓</div><div class="flow-item">Body sensations</div></div><div class="caption">Recognising signals can be a first awareness step</div></div></section>
+      <section id="clip-05" class="clip" data-start="46" data-duration="14" data-track-index="1"><div class="scene"><div><div class="eyebrow">Support cue</div><h2>You don’t have to interpret everything alone.</h2></div><div class="card"><div class="disclaimer">Persistent, recurring, or concerning symptoms? A qualified healthcare professional can help assess them.</div><div class="source">Educational sources: NIMH · Mayo Clinic · Harvard Health</div></div><div class="caption">Educational only — support is available</div></div></section>
+    </div>
+    <script>
+      window.__timelines=window.__timelines||{};
+      const tl=gsap.timeline({paused:true});
+      const intro=(id,at)=>tl.from(`${id} .scene > *`,{y:42,opacity:0,duration:.65,stagger:.12,ease:'power3.out'},at);
+      intro('#clip-01',.2);intro('#clip-02',10.15);intro('#clip-03',21.15);intro('#clip-04',32.15);intro('#clip-05',46.15);
+      tl.to('#bg-anchor',{scale:1.16,x:-20,duration:60,ease:'none'},0);
+      tl.from('#clip-02 .signal',{scale:.2,opacity:0,duration:.6,stagger:.15,ease:'power2.out'},11);
+      window.__timelines['stress-body']=tl;
+    </script>
+  </body>
+</html>
