@@ -7,3 +7,11 @@ The GitHub Actions `Toolkit Health Check` was manually dispatched after publicat
 During the first validation attempt, `scripts/follow_up_tracker.py` contained escaped quote characters that caused a Python syntax error. The script was corrected, locally compiled, committed, and the health check was rerun successfully.
 
 Run reference: https://github.com/balajirajput96/acting-career-automation/actions/runs/31938030790
+
+## 19 August 2026 — Sleep and Memory Video Distribution
+
+The user explicitly confirmed distribution of the rendered faceless 60-second `Sleep and Memory` educational video to Google Drive, Instagram, and Facebook using the approved public caption, source cue, and educational disclaimer. The 60-second MP4 was uploaded to the connected Google Drive account as file ID `1L6LwKR6mDfdI6XjUIawX-ZhXG0CSnDQx`.
+
+The Instagram Reel was published to `@balajirajput96` with the approved caption and shared to the feed. Instagram permalink: https://www.instagram.com/reel/DcNAeWHDlEe/
+
+The confirmed Facebook Reel upload remains pending. The Facebook creation surface was opened three times but navigation was interrupted before the page could load; no Facebook post was created.
