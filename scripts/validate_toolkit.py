@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import csv
+import json
 import sys
 from pathlib import Path
 
@@ -35,6 +36,8 @@ REQUIRED_FILES = [
     "APPLICATION_READINESS_ASSESSMENT.md",
     "JULES_DAILY_MAINTENANCE_PROMPT.md",
     "CLI_AND_JULES_AUTOMATION_MANIFEST.md",
+    "AUTOMATION_AUDIT_INVENTORY.md",
+    "data/automation_run_records.jsonl",
     ".agents/agents/acting-automation-operator/agent.md",
     ".gemini/commands/acting/status.toml",
     ".gemini/commands/acting/plan.toml",
@@ -68,10 +71,38 @@ def validate_templates() -> None:
         fail(f"Email template is missing placeholders: {', '.join(missing)}")
 
 
+def validate_execution_records() -> None:
+    records_path = ROOT / "data" / "automation_run_records.jsonl"
+    required_keys = {
+        "timestamp",
+        "repository",
+        "task",
+        "tools",
+        "action",
+        "result",
+        "failure_category",
+        "recovery_attempt",
+        "validation_status",
+        "remaining_blocker",
+    }
+    lines = [line for line in records_path.read_text(encoding="utf-8").splitlines() if line.strip()]
+    if not lines:
+        fail("automation_run_records.jsonl must contain at least one record")
+    for number, line in enumerate(lines, start=1):
+        try:
+            record = json.loads(line)
+        except json.JSONDecodeError as error:
+            fail(f"Invalid JSON in automation_run_records.jsonl line {number}: {error.msg}")
+        missing = sorted(required_keys - set(record))
+        if missing:
+            fail(f"Automation run record line {number} is missing keys: {', '.join(missing)}")
+
+
 def main() -> None:
     validate_required_files()
     validate_lead_header()
     validate_templates()
+    validate_execution_records()
     validate_video_queue()
     print("PASS: Toolkit files, lead schema, templates, and internal AI workflow assets are valid.")
 
