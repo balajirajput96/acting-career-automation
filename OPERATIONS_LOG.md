@@ -15,3 +15,9 @@ The user explicitly confirmed distribution of the rendered faceless 60-second `S
 The Instagram Reel was published to `@balajirajput96` with the approved caption and shared to the feed. Instagram permalink: https://www.instagram.com/reel/DcNAeWHDlEe/
 
 The confirmed Facebook Reel upload remains pending. The Facebook creation surface was opened three times but navigation was interrupted before the page could load; no Facebook post was created.
+
+## 20 August 2026 — Internal Video Source Review Archive
+
+The editable source and internal review materials for four educational-video drafts—Sleep and Memory, Stress and Body Signals, Attention and Distraction Cues, and Dietary Fibre Basics—were archived as an internal Google Drive review copy. The archive is stored as Drive file ID `1CJUQSJ0b_D3H-CChrTNTewXWKDNKh7Pn` under the name `Educational Video Source Review Pack — 4 Drafts`.
+
+This Drive archive contains source and review assets only. It does not authorize rendering, public posting, batch uploading, or external distribution of any draft.
