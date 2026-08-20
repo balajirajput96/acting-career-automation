@@ -21,3 +21,9 @@ The confirmed Facebook Reel upload remains pending. The Facebook creation surfac
 The editable source and internal review materials for four educational-video drafts—Sleep and Memory, Stress and Body Signals, Attention and Distraction Cues, and Dietary Fibre Basics—were archived as an internal Google Drive review copy. The archive is stored as Drive file ID `1CJUQSJ0b_D3H-CChrTNTewXWKDNKh7Pn` under the name `Educational Video Source Review Pack — 4 Drafts`.
 
 This Drive archive contains source and review assets only. It does not authorize rendering, public posting, batch uploading, or external distribution of any draft.
+
+## 20 August 2026 — Google Jules Repository Connection
+
+Google Jules was signed in with the connected Google account and authorized against the `balajirajput96` GitHub account. The `acting-career-automation` repository was selected as the Jules codebase.
+
+A daily 04:30 UTC Jules scheduled task was created for safe repository-local maintenance only: Python syntax checks, CSV-schema validation, internal-path review, and small workflow or test improvements. The task forbids social-media access, outreach, applications, payments, user-data changes, unverified leads, direct publishing, and direct merges; any code changes must be made in a new branch or pull request. At creation time, the task showed no executions yet.
