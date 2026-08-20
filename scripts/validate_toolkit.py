@@ -37,6 +37,7 @@ REQUIRED_FILES = [
     "JULES_DAILY_MAINTENANCE_PROMPT.md",
     "CLI_AND_JULES_AUTOMATION_MANIFEST.md",
     "AUTOMATION_AUDIT_INVENTORY.md",
+    "SECURE_CREDENTIAL_REFERENCE_POLICY.md",
     "data/automation_run_records.jsonl",
     ".agents/agents/acting-automation-operator/agent.md",
     ".gemini/commands/acting/status.toml",

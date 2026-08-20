@@ -2,6 +2,16 @@ __pycache__/
 *.py[cod]
 *$py.class
 .env
+.env.*
+.secrets/
+secrets/
+credentials.json
+token*.json
+*.pem
+*.key
+*.p12
+*.pfx
+*.jks
 .venv
 env/
 venv/
