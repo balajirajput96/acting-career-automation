@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1920" />
+    <title>Five-Sense Grounding — Topic 06</title>
+    <script src="assets/js/gsap.min.js"></script>
+    <style>
+      :root{--ink:#173d3d;--paper:#f5eee0;--cream:#fffaf1;--teal:#1f6260;--amber:#b67824;--sage:#b9d4c5;--muted:#527477;}
+      html,body{margin:0;width:100%;height:100%;background:#102b2c;font-family:Arial,sans-serif}
+      #root{position:relative;width:1080px;height:1920px;overflow:hidden;color:var(--ink);background:var(--paper)}
+      .base{position:absolute;inset:0;background:radial-gradient(circle at 18% 14%,rgba(185,212,197,.78),transparent 24%),radial-gradient(circle at 84% 23%,rgba(245,205,134,.45),transparent 22%),linear-gradient(155deg,#f6f0e4 0%,#ebf1e9 55%,#f9eee0 100%)}
+      .base:before,.base:after{content:"";position:absolute;border:4px solid rgba(31,98,96,.10);border-radius:999px}.base:before{width:900px;height:900px;left:-430px;top:560px}.base:after{width:780px;height:780px;right:-460px;bottom:-110px}
+      .clip{position:absolute;inset:0;overflow:hidden}.scene{position:absolute;inset:0;padding:122px 82px 232px;display:flex;flex-direction:column;justify-content:space-between}
+      .eyebrow{font-size:31px;font-weight:800;letter-spacing:6px;text-transform:uppercase;color:var(--amber)}h1,h2{margin:0;letter-spacing:-3px;line-height:.98}h1{font-size:112px;max-width:840px}h2{font-size:80px;max-width:860px}p{margin:0;font-size:42px;line-height:1.28;color:var(--muted)}
+      .card{padding:38px;border:3px solid rgba(31,98,96,.23);border-radius:38px;background:rgba(255,250,241,.88);box-shadow:0 24px 65px rgba(23,61,61,.10)}.caption{position:absolute;left:66px;right:66px;bottom:76px;padding:21px 28px;border-radius:25px;background:rgba(16,43,44,.94);color:var(--cream);font-size:38px;line-height:1.18;font-weight:800;text-align:center}
+      .breath{height:430px;position:relative;display:grid;place-items:center}.breath:before{content:"";position:absolute;width:340px;height:340px;border-radius:50%;background:rgba(185,212,197,.62);box-shadow:0 0 0 45px rgba(31,98,96,.08),0 0 0 90px rgba(182,120,36,.06)}.breath span{position:relative;font-size:66px;color:var(--teal);font-weight:800}.five-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}.look{height:172px;border-radius:30px;background:var(--teal);color:var(--cream);display:flex;align-items:center;justify-content:center;font-size:94px;font-weight:800;box-shadow:inset 0 -14px rgba(0,0,0,.08)}.look:nth-child(2),.look:nth-child(5){background:var(--amber)}
+      .texture-grid{display:grid;grid-template-columns:1fr 1fr;gap:25px}.texture{min-height:250px;border-radius:34px;display:flex;align-items:flex-end;padding:30px;box-sizing:border-box;color:var(--teal);font-size:44px;font-weight:800;border:3px solid rgba(31,98,96,.20);background:repeating-linear-gradient(45deg,#fffaf1 0,#fffaf1 16px,#e7f0e7 17px,#e7f0e7 31px)}.texture:nth-child(2){background:repeating-radial-gradient(circle at 20% 30%,#fffaf1 0,#fffaf1 11px,#f1d38e 12px,#f1d38e 23px)}.texture:nth-child(3){background:linear-gradient(135deg,#d5e5d6,#fffaf1)}.texture:nth-child(4){background:linear-gradient(45deg,#fffaf1,#dcefe5,#fffaf1)}
+      .sense-stack{display:flex;flex-direction:column;gap:22px}.sense{display:flex;align-items:center;gap:27px;padding:25px 30px;background:rgba(255,250,241,.9);border-radius:30px;border:3px solid rgba(31,98,96,.18)}.num{min-width:90px;height:90px;border-radius:50%;display:grid;place-items:center;background:var(--teal);color:var(--cream);font-size:48px;font-weight:800}.sense p{font-size:46px;color:var(--ink);font-weight:800}
+      .focus-room{position:relative;height:720px;border-radius:46px;overflow:hidden;background:linear-gradient(160deg,#226a68,#17494a)}.focus-room:before{content:"";position:absolute;left:88px;top:112px;width:300px;height:260px;border:14px solid rgba(255,250,241,.66);border-radius:12px;box-shadow:430px 110px 0 -4px rgba(255,250,241,.48),215px 420px 0 12px rgba(182,120,36,.62)}.focus-ring{position:absolute;width:260px;height:260px;border:16px solid var(--amber);border-radius:50%;left:410px;top:245px;box-shadow:0 0 0 22px rgba(182,120,36,.13)}
+      .end-card{display:flex;flex-direction:column;gap:28px;justify-content:center;min-height:850px}.limit{font-size:52px;line-height:1.12;color:var(--teal);font-weight:800}.source{font-size:29px;line-height:1.4;color:var(--muted)}.smallline{height:10px;width:180px;border-radius:9px;background:var(--amber)}
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="grounding-topic-06" data-start="0" data-width="1080" data-height="1920" data-duration="60">
+      <div class="base"></div>
+      <audio id="narration" data-start="0" data-duration="43.72" data-track-index="3" src="assets/voice/grounding-topic-06.wav" data-volume="1"></audio>
+      <section id="clip-01" class="clip" data-start="0" data-duration="8" data-track-index="1"><div class="scene"><div><div class="eyebrow">Grounding overview</div><div class="smallline"></div></div><div class="card"><h1>Tense or<br>overwhelmed?</h1><p>Present moment par dhyan laane ka ek simple option.</p></div><div class="caption">Tense or overwhelmed? Pause.</div></div></section>
+      <section id="clip-02" class="clip" data-start="8" data-duration="8" data-track-index="1"><div class="scene"><div><div class="eyebrow">Start gently</div><h2>Breathing notice karo.</h2></div><div class="breath" id="breath"><span>Notice</span></div><div class="five-grid"><div class="look">1</div><div class="look">2</div><div class="look">3</div><div class="look">4</div><div class="look">5</div></div><div class="caption">Breathing notice karo. 5 cheezein dekho.</div></div></section>
+      <section id="clip-03" class="clip" data-start="16" data-duration="9" data-track-index="1"><div class="scene"><div><div class="eyebrow">Texture check</div><h2>4 things you can touch.</h2></div><div class="texture-grid"><div class="texture">Fabric</div><div class="texture">Desk</div><div class="texture">Chair</div><div class="texture">Air</div></div><div class="caption">4 cheezein touch karke texture notice karo.</div></div></section>
+      <section id="clip-04" class="clip" data-start="25" data-duration="9" data-track-index="1"><div class="scene"><div><div class="eyebrow">Use your senses</div><h2>3 · 2 · 1</h2></div><div class="sense-stack"><div class="sense"><div class="num">3</div><p>Sounds</p></div><div class="sense"><div class="num">2</div><p>Smells</p></div><div class="sense"><div class="num">1</div><p>Taste</p></div></div><div class="caption">3 sounds • 2 smells • 1 taste</div></div></section>
+      <section id="clip-05" class="clip" data-start="34" data-duration="10" data-track-index="1"><div class="scene"><div><div class="eyebrow">At your pace</div><h2>Notice, don’t force.</h2></div><div class="focus-room"><div class="focus-ring" id="focus-ring"></div></div><div class="card"><p>Goal feelings ko fix karna nahi — attention ko surroundings par lana hai.</p></div><div class="caption">Safe jagah mein, apne pace par.</div></div></section>
+      <section id="clip-06" class="clip" data-start="44" data-duration="16" data-track-index="1"><div class="scene"><div><div class="eyebrow">Important limit</div><div class="smallline"></div></div><div class="end-card"><h2>Education only.</h2><div class="limit">Yeh diagnosis ya treatment nahi hai.</div><div class="card"><p>Ongoing distress, panic, ya daily functioning mein difficulty? Qualified professional se support lena important hai.</p><div class="source">Sources: University of Rochester Medical Center · Mayo Clinic · Cleveland Clinic</div></div></div><div class="caption">Professional support ka substitute nahi.</div></div></section>
+    </div>
+    <script>
+      window.__timelines=window.__timelines||{};
+      const tl=gsap.timeline({paused:true});
+      const intro=(s,t)=>tl.from(`${s} .scene > *`,{y:44,opacity:0,duration:.62,stagger:.12,ease:'power3.out'},t);
+      intro('#clip-01',.2);intro('#clip-02',8.15);intro('#clip-03',16.15);intro('#clip-04',25.15);intro('#clip-05',34.15);intro('#clip-06',44.15);
+      tl.to('#breath',{scale:1.06,duration:2.3,repeat:2,yoyo:true,ease:'sine.inOut'},8.75);
+      tl.from('#clip-02 .look',{scale:.65,opacity:0,duration:.35,stagger:.10,ease:'back.out(1.5)'},10.2);
+      tl.from('#clip-03 .texture',{scale:.86,opacity:0,duration:.42,stagger:.11,ease:'power2.out'},16.8);
+      tl.from('#clip-04 .sense',{x:80,opacity:0,duration:.44,stagger:.16,ease:'power3.out'},25.8);
+      tl.to('#focus-ring',{x:-110,y:-85,duration:4.6,repeat:1,yoyo:true,ease:'sine.inOut'},35.1);
+      window.__timelines['grounding-topic-06']=tl;
+    </script>
+  </body>
+</html>

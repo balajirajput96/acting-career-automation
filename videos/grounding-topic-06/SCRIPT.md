@@ -1,0 +1,3 @@
+# Narration Script
+
+Jab aap tense ya overwhelmed feel karein, ek chhota sensory grounding exercise present moment par dhyan laane ka option ho sakta hai. Pehle apni breathing notice kijiye, bina use force kiye. Phir 5 cheezein dekhiye. 4 cheezein touch karke unki texture notice kijiye. 3 aawazein suniye. 2 smells pe dhyan dijiye, aur 1 taste notice kijiye. Aap baithkar, khade hokar, ya safe jagah mein yeh steps apne pace par kar sakte hain. Iska goal feelings ko fix karna nahi, bas attention ko aas-paas ke environment mein wapas lana hai. Agar distress, panic, ya daily functioning mein difficulty baar-baar ho, trusted professional se support lena important hai. Yeh education hai, diagnosis ya treatment nahi.

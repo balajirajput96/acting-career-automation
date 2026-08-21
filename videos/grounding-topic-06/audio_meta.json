@@ -1,0 +1,17 @@
+{
+  "tts_provider": "manus-generate_speech",
+  "voice_id": "Charon",
+  "bgm": null,
+  "bgm_pending": false,
+  "bgm_provider": null,
+  "voices": [
+    {
+      "id": "01",
+      "path": "assets/voice/grounding-topic-06.wav",
+      "duration_s": 43.72,
+      "words": []
+    }
+  ],
+  "sfx": [],
+  "total_duration_s": 60
+}
