@@ -11,9 +11,9 @@
 
 | Source Title | Organization / Journal | URL | Precise Supported Claim |
 | :--- | :--- | :--- | :--- |
-| **The right time to learn: mechanisms and optimization of spaced learning** | Nature Reviews Neuroscience / PubMed Central (NIH) | [PMC5126970](https://pmc.ncbi.nlm.nih.gov/articles/PMC5126970/) | Spaced training involves long intervals between learning sessions, leading to more robust memory formation than massed training by avoiding temporal trace overlap and allowing cellular consolidation. |
-| **Neurogenesis and the spacing effect: Learning over time enhances memory storage** | Trends in Cognitive Sciences / PubMed Central (NIH) | [PMC1876761](https://pmc.ncbi.nlm.nih.gov/articles/PMC1876761/) | Distributing learning events over time significantly enhances long-term memory retention and supports neurobiological consolidation compared to massed practice. |
-| **Be a Better Learner Using Psychology** | American Psychological Association (APA) | [APA Guidelines](https://www.apa.org/education-career/training/psyclearn-better-learner) | Evidence-backed habits like spaced learning improve memory consolidation and cognitive retention. |
+| **The right time to learn: mechanisms and optimization of spaced learning** | Nature Reviews Neuroscience / PubMed Central (NIH) | [PMC5126970](https://pmc.ncbi.nlm.nih.gov/articles/PMC5126970/) | Across many learning types, spaced training with longer intervals is associated with more robust memory formation than massed training; proposed mechanisms include reactivation and consolidation of earlier learning traces. |
+| **Neurogenesis and the spacing effect: Learning over time enhances memory and the survival of new neurons** | Learning & Memory / PubMed Central (NIH) | [PMC1876761](https://pmc.ncbi.nlm.nih.gov/articles/PMC1876761/) | In an animal spatial-learning study, learning distributed over time was associated with more persistent memory; this result does not establish a direct prescription for human study intervals. |
+| **Be a Better Learner Using Psychology** | American Psychological Association (APA) | [APA learning resource](https://www.apa.org/education-career/training/psyclearn-better-learner) | The APA describes spaced learning and retrieval practice as research-backed learning strategies for supporting lasting retention. |
 
 ---
 
@@ -22,34 +22,34 @@
 
 ---
 
-## 4. Hindi-English Script (117 words)
-"Welcome to today's neuroscience insight. Why does spaced practice support learning? When we study continuously without breaks, known as massed practice or cramming, neural pathways experience temporary fatigue and overlapping activation. This limits optimal molecular consolidation. However, when learning episodes are distributed over time with proper intervals, which is known as spaced practice, the brain undergoes crucial cellular and molecular consolidation phases between sessions. During these resting intervals, neural circuits stabilize memory traces and facilitate protein synthesis necessary for long term synaptic plasticity. In short, spacing out your study sessions allows your memory networks time to consolidate neural connections, transforming temporary exposure into durable long term memory. Yeh neuroscience ke adhaar par learning ko behtar banata hai."
+## 4. Hindi-English Script (124 words)
+"Kabhi ek hi chapter ko hours tak padhkar bhi yaad nahi rehta? Spaced practice ka matlab hai same idea ko chhote sessions mein, time gaps ke saath revisit karna. Research suggests spaced training can support more robust memory formation than ek hi sitting mein massed practice. Ek possible reason yeh hai ki later sessions earlier learning ko reactivate aur reinforce karte hain. Lekin perfect gap sabke liye same nahi hota; material, goal aur learner ke hisaab se timing badal sakti hai. Practical idea: short return visits ko days mein spread karo, aur self-testing bhi add karo. Yeh marks ki guarantee ya memory-treatment nahi hai. Persistent learning concerns daily life ko affect karein, to educator ya qualified professional se baat karna helpful ho sakta hai."
 
 ---
 
 ## 5. Five-Scene 9:16 Faceless Visual Plan
 
-1. **Scene 1 (0–12s):** Clean minimalist title card with typography: *"Neuroscience of Learning: Spaced Practice"*. Dark slate background with subtle glowing neural nodes.
-2. **Scene 2 (12–28s):** Animated comparison graphic showing *"Massed Practice (Cramming)"* with overlapping saturated waves versus *"Spaced Practice"* with clean distributed intervals.
-3. **Scene 3 (28–48s):** Stylized cellular and molecular diagram illustrating resting phases, synaptic activity, and memory trace stabilization between learning sessions.
-4. **Scene 4 (48–65s):** Flowchart highlighting protein synthesis and long-term potentiation (LTP) during rest periods.
-5. **Scene 5 (65–60s):** Summary badge: *"Durable Long-Term Memory through Spaced Intervals"* with professional closing slate.
+1. **Scene 1 (0–10s):** Clean minimalist title card: *"Spaced Practice vs. Cramming"*, with a neutral learning-question hook and no promise.
+2. **Scene 2 (10–23s):** Animated comparison: one dense study block versus three smaller revisits on a calendar line.
+3. **Scene 3 (23–37s):** Abstract memory-trace visual showing a later study visit reactivating and reinforcing an earlier trace; label it as a proposed explanation.
+4. **Scene 4 (37–51s):** Practical card sequence: *"Revisit"*, *"Leave a gap"*, *"Self-test"*; include on-screen text that the ideal gap varies.
+5. **Scene 5 (51–60s):** Safety-conscious summary: *"A study strategy, not a guarantee"* and support-seeking line for persistent concerns.
 
 ---
 
 ## 6. Line-Level Caption Plan
 
-- **Line 1 (0–12s):** Welcome to today's neuroscience insight. Why does spaced practice support learning?
-- **Line 2 (12–28s):** When we study continuously without breaks, known as massed practice or cramming, neural pathways experience temporary fatigue and overlapping activation.
-- **Line 3 (28–48s):** This limits optimal molecular consolidation. However, when learning episodes are distributed over time with proper intervals, which is known as spaced practice...
-- **Line 4 (48–65s):** ...the brain undergoes crucial cellular and molecular consolidation phases between sessions. During these resting intervals, neural circuits stabilize memory traces and facilitate protein synthesis necessary for long term synaptic plasticity.
-- **Line 5 (65–60s):** In short, spacing out your study sessions allows your memory networks time to consolidate neural connections, transforming temporary exposure into durable long term memory. Yeh neuroscience ke adhaar par learning ko behtar banata hai.
+- **Line 1 (0–10s):** Kabhi ek hi chapter ko hours tak padhkar bhi yaad nahi rehta?
+- **Line 2 (10–23s):** Spaced practice: same idea, short sessions, time gaps ke saath revisit.
+- **Line 3 (23–37s):** Research suggests spaced training can support robust memory; later sessions may reactivate earlier learning.
+- **Line 4 (37–51s):** Short return visits, days mein spread karo, aur self-testing add karo. Perfect gap fixed nahi hota.
+- **Line 5 (51–60s):** Study strategy, guarantee nahi. Persistent concerns ke liye educator ya qualified professional se baat karein.
 
 ---
 
 ## 7. Internal Review Metadata Block
-- **Proposed Title:** The Neuroscience Behind Spaced Practice vs. Cramming
-- **Non-Sensational Caption:** Exploring how distributed study intervals support neural consolidation and long-term memory retention based on cognitive neuroscience research. #Neuroscience #SpacedPractice #LearningScience #CognitivePsychology
+- **Proposed Title:** Spaced Practice vs. Cramming: A Learning Science Overview
+- **Non-Sensational Caption:** A Hindi-English educational overview of how shorter study revisits spaced over time may support learning. Not a guarantee or substitute for individualized support. #LearningScience #SpacedPractice #StudySkills
 
 ---
 

@@ -1,0 +1,16 @@
+{
+  "tts_provider": "manus-generate_speech",
+  "voice_id": "Charon",
+  "bgm": null,
+  "bgm_pending": false,
+  "voices": [
+    {
+      "id": "01",
+      "path": "assets/voice/spaced-practice-topic-07.wav",
+      "duration_s": 45.64,
+      "words": []
+    }
+  ],
+  "sfx": [],
+  "total_duration_s": 60
+}
