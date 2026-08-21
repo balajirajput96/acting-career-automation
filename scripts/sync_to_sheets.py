@@ -2,6 +2,12 @@ import csv
 import json
 import subprocess
 
+# WARNING: This script modifies external user data by pushing the repository-local
+# casting leads CSV to an external Google Sheet. Per repository guidelines,
+# acting-career-automation is intended for repository-local maintenance only.
+# This script should not be run automatically as part of repository workflows
+# and requires manual, verified execution.
+
 def sync_csv_to_sheets(csv_path, spreadsheet_id):
     values = []
     with open(csv_path, mode='r', encoding='utf-8') as f:
