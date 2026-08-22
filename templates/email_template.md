@@ -1,3 +1,4 @@
+<!-- DRAFT: For internal review only -->
 Subject: Audition for {{role}} - {{project}} - {{name}}
 
 Dear {{name}},
