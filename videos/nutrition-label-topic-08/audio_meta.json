@@ -1,0 +1,17 @@
+{
+  "tts_provider": "manus-generate_speech",
+  "voice_id": "Charon",
+  "bgm": null,
+  "bgm_pending": false,
+  "bgm_provider": null,
+  "voices": [
+    {
+      "id": "nutrition-label-topic-08",
+      "path": "assets/voice/nutrition-label-topic-08.wav",
+      "duration_s": 51.72,
+      "words": []
+    }
+  ],
+  "sfx": [],
+  "total_duration_s": 51.72
+}

@@ -11,30 +11,30 @@
 1. **Source Title:** How to Understand and Use the Nutrition Facts Label
    - **Organization:** U.S. Food and Drug Administration (FDA)
    - **URL:** https://www.fda.gov/food/nutrition-facts-label/how-understand-and-use-nutrition-facts-label
-   - **Precise Supported Claim:** Serving size is the starting point for determining calories and nutrients, and Percent Daily Value (%DV) helps evaluate whether a nutrient contribution is low (5% or less) or high (20% or more).
-2. **Source Title:** Understanding Food Labels - The Nutrition Source
+   - **Precise Supported Claim:** On the U.S. Nutrition Facts label, serving size and servings per container frame the listed calories and nutrients; 5% DV or less is a general guide for low and 20% DV or more for high per serving.
+2. **Source Title:** Understanding Food Labels
    - **Organization:** Harvard T.H. Chan School of Public Health
    - **URL:** https://nutritionsource.hsph.harvard.edu/food-label-guide/
-   - **Precise Supported Claim:** Navigating food package terminology, including added sugars, sodium, and ingredients listed in descending order by weight, empowers consumers to make informed dietary choices.
+   - **Precise Supported Claim:** U.S. package ingredients are listed in descending order by weight; the guide also describes using %DV to compare similar products.
 3. **Source Title:** Understanding Food Nutrition Labels
    - **Organization:** American Heart Association
    - **URL:** https://www.heart.org/en/healthy-living/healthy-eating/eat-smart/nutrition-basics/understanding-food-nutrition-labels
-   - **Precise Supported Claim:** Nutrition labels enable consumers to identify nutrient-dense foods and monitor intake of saturated fats and sodium for overall dietary awareness.
+   - **Precise Supported Claim:** The AHA advises checking serving information and using %DV as a comparison tool, with lower values for nutrients a person aims to limit and higher values for beneficial nutrients.
 
 ---
 
 ## 3. Limitations and Safety Note
-- **Educational Scope Only:** This video review package is strictly for educational purposes and general information. It does not provide medical diagnoses, individualized nutritional prescriptions, treatment promises, or health claims. It is not a substitute for professional medical care or clinical dietary counseling. No fear-based, sensational, or promotional language is used.
+- **Educational Scope Only:** This video review package is strictly for educational purposes and general information. It describes a U.S.-style Nutrition Facts label; label formats, laws, and dietary reference values vary by country and product. It does not provide medical diagnoses, individualized nutritional prescriptions, treatment promises, or health claims. It is not a substitute for professional medical care or clinical dietary counseling. No fear-based, sensational, or promotional language is used.
 
 ---
 
-## 4. Hindi-English Narration Script (119 Words)
-> "Hello friends. Packaged foods mein nutrition label padhna ek ahem skill hai jo aapko informed choices lene mein madad karti hai. Sabse pehle, serving size check kariye. Packet par diye gaye nutrients poore packet ke liye hain ya ek serving ke liye, yeh dekhna zaroori hai. Agla step hai calories aur Percent Daily Value (%DV) ko samajhna. 5% DV ya kam kisi nutrient ko low maana jata hai, jabki 20% DV ya zyada high maana jata hai. Iske baad, added sugars, sodium, aur saturated fats ki matra par dhyan dein. Aakhiri mein, ingredients list zaroor padhein, jismein ingredients descending order mein list hote hain. Yeh choti si aadat aapko behtar dietary decisions lene mein sahayak hoti hai. Thank you."
+## 4. Hindi-English Narration Script (125 words)
+> "Packaged food ka nutrition label useful comparison tool ho sakta hai. Pehle serving size aur packet mein servings check karein; calories aur nutrients ek serving ke hisaab se listed hote hain. Agla, Percent Daily Value, ya %DV, dekhein. FDA guidance mein 5% DV ya kam low aur 20% DV ya zyada high maana jata hai. Nutrient ka context bhi zaroori hai: saturated fat, sodium aur added sugars ke liye lower %DV compare kar sakte hain, while fiber jaise nutrients ke liye higher %DV useful ho sakta hai. Ingredients list weight ke descending order mein hoti hai. Labels country aur product ke hisaab se vary karte hain; yeh personal diet prescription nahi hai. Health needs, allergies, ya dietary concerns ke liye qualified professional se advice lein."
 
 ---
 
 ## 5. Five-Scene 9:16 Faceless Visual Plan
-- **Scene 1 (0:00 - 0:12):** Clean, neutral split-screen graphic showing a packaged food item alongside a highlighted Nutrition Facts label. 
+- **Scene 1 (0:00 - 0:12):** Clean, neutral illustration of a fictional U.S.-style packaged-food label alongside a clear note: *"example format — labels vary by country"*.
   - *Text Overlay:* "Reading Nutrition Labels / पोषण लेबल्स को समझें"
 - **Scene 2 (0:12 - 0:24):** Close-up zoom on the "Serving Size" section of the label with a clean callout box. 
   - *Text Overlay:* "Check Serving Size / सर्विंग साइज़ जांचें"
@@ -63,7 +63,7 @@
 
 ## 7. Internal Review Metadata Block
 - **Proposed Title:** Understanding Packaged-Food Nutrition Labels: A Practical Guide
-- **Non-Sensational Caption:** A clear, educational breakdown of how to read serving sizes, Percent Daily Values (%DV), and ingredient lists on packaged foods.
+- **Non-Sensational Caption:** A Hindi-English educational overview of serving sizes, Percent Daily Value (%DV), and ingredient lists on U.S.-style packaged-food labels. Label formats vary by country; this is not individualized dietary advice.
 
 ---
 

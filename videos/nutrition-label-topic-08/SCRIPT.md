@@ -1,0 +1,3 @@
+# Narration script
+
+Packaged food ka nutrition label useful comparison tool ho sakta hai. Pehle serving size aur packet mein servings check karein; calories aur nutrients ek serving ke hisaab se listed hote hain. Agla, Percent Daily Value, ya %DV, dekhein. FDA guidance mein 5% DV ya kam low aur 20% DV ya zyada high maana jata hai. Nutrient ka context bhi zaroori hai: saturated fat, sodium aur added sugars ke liye lower %DV compare kar sakte hain, while fiber jaise nutrients ke liye higher %DV useful ho sakta hai. Ingredients list weight ke descending order mein hoti hai. Labels country aur product ke hisaab se vary karte hain; yeh personal diet prescription nahi hai. Health needs, allergies, ya dietary concerns ke liye qualified professional se advice lein.
