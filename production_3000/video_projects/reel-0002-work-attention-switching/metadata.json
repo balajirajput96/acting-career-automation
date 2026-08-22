@@ -1,0 +1,23 @@
+{
+  "reel_id": "Reel_0002",
+  "batch_id": "Batch_001",
+  "topic_family": "Psychology",
+  "subtopic": "Attention",
+  "editorial_lens": "Mechanism",
+  "audience_context": "Work",
+  "content_classification": "RESEARCH_INFORMED_WITH_CONTEXT_LIMITS",
+  "evidence_level": "SOURCE_VERIFIED",
+  "source_ledger": "../../source_ledgers/Reel_0002_work_interruptions.md",
+  "status": "COMPLETED_DRIVE_VERIFIED",
+  "drive": {
+    "canonical_root_id": "1s8HhWxw2k1n57lhMyLmIT30Ln6y8rnc4",
+    "batch_folder": "Batch_001",
+    "batch_folder_id": "121vsXW12kdezsR_47uJ0gTebetMGyUn-",
+    "video_file_id": "1l6pQSrEbKT--nrYFs-uRyseAgipRRj5T",
+    "metadata_file_id": "19aRLMGroDmtJRrjOyFN7JAbW29tZnVO5",
+    "source_ledger_file_id": "1EW7XWGS_ITxbirMu6UfNH1slWFGVkNnn",
+    "quality_control_file_id": "1O0oG5-d83v5hiqhKPd_OnGXnWyaiyw8P",
+    "upload_verified": true
+  },
+  "public_post_status": "NOT_REQUESTED"
+}

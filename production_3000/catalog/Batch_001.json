@@ -24,9 +24,10 @@
       "editorial_lens": "Mechanism",
       "audience_context": "Work",
       "source_classification_required": "RESEARCH_REQUIRED",
-      "status": "PLANNED",
-      "drive_upload_verified": false,
-      "public_post_status": "NOT_REQUESTED"
+      "status": "COMPLETED_DRIVE_VERIFIED",
+      "drive_upload_verified": true,
+      "public_post_status": "NOT_REQUESTED",
+      "drive_video_file_id": "1l6pQSrEbKT--nrYFs-uRyseAgipRRj5T"
     },
     {
       "reel_id": "Reel_0003",
