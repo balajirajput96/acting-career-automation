@@ -1,0 +1,21 @@
+{
+  "reel_id": "Reel_0001",
+  "batch_id": "Batch_001",
+  "topic_family": "Psychology",
+  "topic": "Task switching during a study session",
+  "content_classification": "ESTABLISHED_EXPERIMENTAL_PATTERN_WITH_CONTEXT_LIMITS",
+  "evidence_level": "SOURCE_VERIFIED",
+  "source_ledger": "../../source_ledgers/Reel_0001_attention_task_switching.md",
+  "status": "COMPLETED_DRIVE_VERIFIED",
+  "drive": {
+    "canonical_root_id": "1s8HhWxw2k1n57lhMyLmIT30Ln6y8rnc4",
+    "batch_folder": "Batch_001",
+    "batch_folder_id": "121vsXW12kdezsR_47uJ0gTebetMGyUn-",
+    "video_file_id": "1RHR3sS46J5B-5kgrEOaK1KRMlISicu9Z",
+    "metadata_file_id": "1BKdZpKU3wvni9CiK24RPVWxSeXSz_5UL",
+    "source_ledger_file_id": "1KqIQ6rTaRXlL5Sbum6eA0KQ6XO42sOMP",
+    "quality_control_file_id": "1S-mmfr2sbvIZTxpiUXjzW8DGn2zsSnch",
+    "upload_verified": true
+  },
+  "public_post_status": "NOT_REQUESTED"
+}

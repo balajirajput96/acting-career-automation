@@ -1,0 +1,7 @@
+# Local render/runtime artifacts remain in the canonical Google Drive workspace.
+**/node_modules/
+video_projects/**/renders/
+video_projects/**/snapshots/
+video_projects/**/assets/voice/
+video_projects/**/assets/*.png
+video_projects/**/assets/*.jpg

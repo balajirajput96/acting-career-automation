@@ -1,7 +1,7 @@
 {
   "batch_id": "Batch_001",
   "reel_count": 30,
-  "status": "PLANNED",
+  "status": "IN_PROGRESS",
   "reels": [
     {
       "reel_id": "Reel_0001",
@@ -11,9 +11,10 @@
       "editorial_lens": "Mechanism",
       "audience_context": "Study",
       "source_classification_required": "RESEARCH_REQUIRED",
-      "status": "PLANNED",
-      "drive_upload_verified": false,
-      "public_post_status": "NOT_REQUESTED"
+      "status": "COMPLETED_DRIVE_VERIFIED",
+      "drive_upload_verified": true,
+      "public_post_status": "NOT_REQUESTED",
+      "drive_video_file_id": "1RHR3sS46J5B-5kgrEOaK1KRMlISicu9Z"
     },
     {
       "reel_id": "Reel_0002",

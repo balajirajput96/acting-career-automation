@@ -1,0 +1,16 @@
+{
+  "tts_provider": "manus-generate_speech",
+  "voice_id": "Charon",
+  "bgm": null,
+  "bgm_pending": false,
+  "voices": [
+    {
+      "id": "reel-0001-attention-switching",
+      "path": "assets/voice/reel-0001-attention-switching.wav",
+      "duration_s": 52.6,
+      "words": []
+    }
+  ],
+  "sfx": [],
+  "total_duration_s": 52.6
+}

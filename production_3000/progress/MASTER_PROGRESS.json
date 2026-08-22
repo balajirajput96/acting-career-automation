@@ -4,19 +4,19 @@
   "total_reels": 3000,
   "completion_definition": "source_verified + scripted + voiced + visualized + rendered + qc_passed + drive_uploaded_verified + metadata_logged",
   "counts": {
-    "planned": 3000,
+    "planned": 2999,
     "researching": 0,
-    "source_verified": 0,
-    "scripted": 0,
-    "rendered": 0,
-    "qc_passed": 0,
-    "drive_uploaded_verified": 0,
-    "completed": 0,
+    "source_verified": 1,
+    "scripted": 1,
+    "rendered": 1,
+    "qc_passed": 1,
+    "drive_uploaded_verified": 1,
+    "completed": 1,
     "failed": 0,
     "retry_queue": 0
   },
   "current_batch": "Batch_001",
-  "current_reel": "Reel_0001",
+  "current_reel": "Reel_0002",
   "catalog_file": "catalog/REEL_CATALOG.jsonl",
   "canonical_drive": {
     "folder_name": "3000_HINDI_RESEARCH_REELS",
@@ -46,5 +46,5 @@
     "catalog_generation_report_file_id": "1OwcaPqEwwdzsedV1J1WaosE1PPgeW0iA",
     "upload_verified": true
   },
-  "last_updated": "2026-08-22T19:37:00+00:00"
+  "last_updated": "2026-08-22T19:54:00+00:00"
 }
