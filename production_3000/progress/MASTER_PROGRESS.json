@@ -1,0 +1,50 @@
+{
+  "mission": "3000_HINDI_RESEARCH_REELS",
+  "schema_version": "1.0",
+  "total_reels": 3000,
+  "completion_definition": "source_verified + scripted + voiced + visualized + rendered + qc_passed + drive_uploaded_verified + metadata_logged",
+  "counts": {
+    "planned": 3000,
+    "researching": 0,
+    "source_verified": 0,
+    "scripted": 0,
+    "rendered": 0,
+    "qc_passed": 0,
+    "drive_uploaded_verified": 0,
+    "completed": 0,
+    "failed": 0,
+    "retry_queue": 0
+  },
+  "current_batch": "Batch_001",
+  "current_reel": "Reel_0001",
+  "catalog_file": "catalog/REEL_CATALOG.jsonl",
+  "canonical_drive": {
+    "folder_name": "3000_HINDI_RESEARCH_REELS",
+    "folder_id": "1s8HhWxw2k1n57lhMyLmIT30Ln6y8rnc4",
+    "status": "verified_existing_workspace",
+    "supporting_folders": {
+      "research_database": "1BnC6qq5-VAht3fiLs0QUo42XxNqRjo-g",
+      "script_database": "19ZzlSPRhrNtoJwM3Fgp-hCR31GJ0_1zb",
+      "video_projects": "1BQank98U2yMZ_43YpeLOheMZ6YG8svzQ",
+      "completed_reels": "1MuuYHYSWuppDatHwMYq9mKrLFTWc9h5Q",
+      "batches_index": "1PKDfG7dqWkfa7JisTZTVwkvTHhzp1bRh",
+      "source_metadata": "1OZPvT8fxVgtw_pZAUdIaYjcLdXkF5fYV",
+      "quality_control": "1fx2xZ6OxnSQbGhUMUx_G6XPzKTkeUjBE",
+      "error_log": "183lJp-gOpRtZQ2i0dpQVwJVgusOBFCX_",
+      "progress": "1spKtmMa0zLJxKp9XBhS79Ygfu9o2Xz-R",
+      "assets": "1WAYNhkIqt1CT4f9FcgYMWc93twYdRdFT"
+    }
+  },
+  "duplicate_drive_guard": {
+    "folder_name": "3000_HINDI_RESEARCH_REELS",
+    "folder_id": "1vYLRarvedtfaYzNcINGKpKAeeFaz0OnD",
+    "status": "preserve_do_not_write_until_relationship_verified"
+  },
+  "verified_drive_artifacts": {
+    "master_progress_file_id": "1bRoVffA5lP5wUKUICRv8raCpnBToRH_1",
+    "reel_catalog_file_id": "1TudcLfd2qEbmJP4xw3PwuQYnBJDvLGHs",
+    "catalog_generation_report_file_id": "1OwcaPqEwwdzsedV1J1WaosE1PPgeW0iA",
+    "upload_verified": true
+  },
+  "last_updated": "2026-08-22T19:37:00+00:00"
+}

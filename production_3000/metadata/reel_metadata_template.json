@@ -1,0 +1,53 @@
+{
+  "reel_id": "Reel_0001",
+  "batch_id": "Batch_001",
+  "catalog_slot": "PSYCHOLOGY__ATTENTION__MECHANISM__STUDY",
+  "topic_family": "Psychology",
+  "topic": "",
+  "unique_angle": "",
+  "content_classification": "UNCLASSIFIED",
+  "evidence_level": "UNVERIFIED",
+  "source_ledger": [
+    {
+      "organization_or_authors": "",
+      "title": "",
+      "url": "",
+      "publication_date": "",
+      "claim_used": "",
+      "limitation": "",
+      "source_type": ""
+    }
+  ],
+  "script": {
+    "language": "Hindi with natural English technical terms only when necessary",
+    "word_count": 0,
+    "claim_check_status": "PENDING",
+    "caption_text_status": "PENDING"
+  },
+  "asset_provenance": {
+    "voice": "Faceless neutral synthetic narration unless a user-authorized original source is explicitly labelled.",
+    "face": "No user or third-party face use without a specific permitted asset record.",
+    "visuals": []
+  },
+  "quality_control": {
+    "rendered": false,
+    "duration_seconds": null,
+    "resolution": null,
+    "audio_verified": false,
+    "caption_contrast_verified": false,
+    "claim_limitations_visible": false
+  },
+  "drive": {
+    "canonical_root_id": "1s8HhWxw2k1n57lhMyLmIT30Ln6y8rnc4",
+    "batch_folder_id": "",
+    "video_file_id": "",
+    "metadata_file_id": "",
+    "upload_verified": false
+  },
+  "status": "PLANNED",
+  "public_post_status": "NOT_REQUESTED",
+  "retry": {
+    "required": false,
+    "reason": ""
+  }
+}
