@@ -1,1 +1,2 @@
+<!-- DRAFT: For internal review only -->
 Hi {{name}}! Saw your post/listing on {{source}} for the {{role}} role in {{project}}. I'm really interested! My work is at [link to your reel/portfolio]. Let me know if you think I'd be a good fit! Thanks!
