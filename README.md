@@ -13,9 +13,13 @@ acting-career-automation/
 │   ├── follow_up_tracker.yml       # 7-day old 'sent' leads reminder Issue
 │   └── reply_processor.yml         # Issue comments (/sent, /rejected, /callback) -> labels + Project board move
 ├── scripts/
+│   ├── check_csv_header.py         # Validates casting leads CSV headers
+│   ├── follow_up_tracker.py        # Identifies and flags leads needing follow-up
 │   ├── generate_drafts.py          # CSV row -> personalized email + DM draft
 │   ├── parse_leads.py              # Detect new rows (status=NEW), check scam red-flags
+│   ├── reply_processor.py          # Process Issue comments and update labels
 │   ├── tracker_utils.py            # Shared helpers: CSV read/write, GitHub API wrappers
+│   ├── validate_toolkit.py         # Validates local scripts and templates
 │   └── requirements.txt            # Python dependencies
 ├── data/
 │   ├── casting_leads.csv           # Columns: id,date_found,source,project,role,contact_type,contact,status,notes
