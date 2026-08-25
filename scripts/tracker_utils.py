@@ -1,6 +1,5 @@
 import csv
 import os
-from github import Github
 
 def get_csv_data(file_path):
     if not os.path.exists(file_path):
@@ -34,5 +33,8 @@ def get_github_repo():
     repo_name = os.getenv('GITHUB_REPOSITORY')
     if not token or not repo_name:
         return None
+    # Keep optional GitHub access out of pure local helpers and test collection.
+    # The dependency remains declared in requirements.txt for runtime use.
+    from github import Github
     g = Github(token)
     return g.get_repo(repo_name)
