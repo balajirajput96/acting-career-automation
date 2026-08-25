@@ -1,0 +1,3 @@
+{"asset_id":"voice_reel_0004","type":"speech","source":"Manus native speech generation","path":"assets/voice/reel-0004-digital-notifications-focus.wav","provenance":"Synthetic neutral Hindi narration; no user or third-party voice reference.","status":"READY"}
+{"asset_id":"hero_reel_0004","type":"image","source":"Manus native image generation","path":"assets/images/notification-focus-visual.png","provenance":"Original text-free editorial desk/notification illustration; no person, face, logo, or brand asset.","status":"READY"}
+{"asset_id":"visual_reel_0004","type":"html_motion_graphics","source":"Original editable HTML/CSS/JS composition","path":"index.html","provenance":"Original notification-flow, study-limit, and practical-experiment diagrams.","status":"READY"}

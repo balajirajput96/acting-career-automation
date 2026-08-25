@@ -1,0 +1,38 @@
+{
+  "reel_id": "Reel_0004",
+  "batch_id": "Batch_001",
+  "topic_family": "Psychology",
+  "subtopic": "Attention",
+  "editorial_lens": "Mechanism",
+  "audience_context": "Digital Life",
+  "content_classification": "ESTABLISHED_EVIDENCE_WITH_CONTEXT_LIMITS",
+  "source_ledger": "../../source_ledgers/Reel_0004_digital_notifications_focus.md",
+  "status": "COMPLETED_DRIVE_VERIFIED",
+  "render": {
+    "file": "renders/reel-0004-digital-notifications-focus.mp4",
+    "duration_s": 60.041667,
+    "video_codec": "h264",
+    "audio_codec": "aac",
+    "width": 1080,
+    "height": 1920,
+    "fps": 24,
+    "method": "two validated low-memory segments, then timestamp-safe re-encode"
+  },
+  "quality_control": "../../quality_control/Reel_0004_final_review.md",
+  "drive": {
+    "canonical_root_id": "1s8HhWxw2k1n57lhMyLmIT30Ln6y8rnc4",
+    "batch_folder_id": "121vsXW12kdezsR_47uJ0gTebetMGyUn-",
+    "upload_verified": true,
+    "video_file_id": "1S5AtsNVhvCkG0Z4Ni9puHkVqh2hJf5P6",
+    "metadata_file_id": "17_jt55Udau4C8ObolK35dFREEEukvjdp",
+    "source_ledger_file_id": "1UKOkiU0GjH42e1ogjBIFZSnERuxA7Ork",
+    "quality_control_file_id": "1XtgYxKuiy4i87FXdge33_ehVf0IE6xMx",
+    "visual_asset_file_id": "1qgLa6e_yZSMJBMgEGKPLdkP7hP3qCNiD",
+    "video_md5": "d43ca9908f8c3625b86cac42cfe75159",
+    "video_size_bytes": 3982807,
+    "visual_asset_md5": "e67a3266d9c85fc2de663d2aac95140c",
+    "verified_at": "2026-08-25T04:45:14.285Z"
+  },
+  "public_post_status": "NOT_REQUESTED",
+  "completed_at": "2026-08-25T04:45:14.285Z"
+}

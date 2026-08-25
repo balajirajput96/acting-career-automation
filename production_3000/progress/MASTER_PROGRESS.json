@@ -4,19 +4,19 @@
   "total_reels": 3000,
   "completion_definition": "source_verified + scripted + voiced + visualized + rendered + qc_passed + drive_uploaded_verified + metadata_logged",
   "counts": {
-    "planned": 2997,
+    "planned": 2996,
     "researching": 0,
-    "source_verified": 3,
-    "scripted": 3,
-    "rendered": 3,
-    "qc_passed": 3,
-    "drive_uploaded_verified": 3,
-    "completed": 3,
+    "source_verified": 4,
+    "scripted": 4,
+    "rendered": 4,
+    "qc_passed": 4,
+    "drive_uploaded_verified": 4,
+    "completed": 4,
     "failed": 0,
     "retry_queue": 0
   },
   "current_batch": "Batch_001",
-  "current_reel": "Reel_0004",
+  "current_reel": "Reel_0005",
   "catalog_file": "catalog/REEL_CATALOG.jsonl",
   "canonical_drive": {
     "folder_name": "3000_HINDI_RESEARCH_REELS",
@@ -46,14 +46,14 @@
     "catalog_generation_report_file_id": "1OwcaPqEwwdzsedV1J1WaosE1PPgeW0iA",
     "upload_verified": true
   },
-  "last_updated": "2026-08-25T04:23:17.936Z",
+  "last_updated": "2026-08-25T04:45:14.285Z",
   "latest_completion": {
-    "reel_id": "Reel_0003",
+    "reel_id": "Reel_0004",
     "status": "COMPLETED_DRIVE_VERIFIED",
     "batch_id": "Batch_001",
     "canonical_drive_root_id": "1s8HhWxw2k1n57lhMyLmIT30Ln6y8rnc4",
-    "drive_video_file_id": "17iQo5as1qOLYuJry0LX1SexzbwjoK0tA",
-    "verified_at": "2026-08-25T04:23:17.936Z",
-    "recovery_note": "full-length render recovered with two validated low-memory segments; no public post requested"
+    "drive_video_file_id": "1S5AtsNVhvCkG0Z4Ni9puHkVqh2hJf5P6",
+    "verified_at": "2026-08-25T04:45:14.285Z",
+    "recovery_note": "Proactive two-segment, 24-fps, one-worker low-memory render; no public post requested"
   }
 }

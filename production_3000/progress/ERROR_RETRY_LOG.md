@@ -7,3 +7,7 @@
 ## 2026-08-25T04:23:17.936Z — Reel_0003 recovery resolved
 
 The initial full low-memory render was interrupted by a sandbox reset under memory pressure. Source assets were restored without overwriting completed records. The recovery strategy used two validated 24-fps low-memory segments, then deterministic final re-encode. Final canonical Drive verification succeeded; no retry remains queued.
+
+## 2026-08-25T04:45:14.285Z — Reel_0004 proactive low-memory completion
+
+Full-timeline rendering was not attempted after the documented environment reset risk. Two self-contained segments passed structural checks, rendered at 24 fps with one worker, were re-encoded into a 60.041667-second final MP4, and passed canonical Drive checksum/parent verification. No retry remains queued.

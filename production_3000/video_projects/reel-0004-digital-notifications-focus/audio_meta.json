@@ -1,0 +1,6 @@
+{
+  "tts_provider":"manus-generate_speech",
+  "voice_id":"Charon",
+  "voices":[{"id":"reel-0004-digital-notifications-focus","path":"assets/voice/reel-0004-digital-notifications-focus.wav","duration_s":48.88,"words":[]}],
+  "sfx":[],"bgm":null,"total_duration_s":48.88
+}

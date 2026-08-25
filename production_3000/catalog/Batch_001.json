@@ -54,9 +54,15 @@
       "editorial_lens": "Mechanism",
       "audience_context": "Digital Life",
       "source_classification_required": "RESEARCH_REQUIRED",
-      "status": "PLANNED",
-      "drive_upload_verified": false,
-      "public_post_status": "NOT_REQUESTED"
+      "status": "COMPLETED_DRIVE_VERIFIED",
+      "drive_upload_verified": true,
+      "public_post_status": "NOT_REQUESTED",
+      "drive_video_file_id": "1S5AtsNVhvCkG0Z4Ni9puHkVqh2hJf5P6",
+      "drive_metadata_file_id": "17_jt55Udau4C8ObolK35dFREEEukvjdp",
+      "drive_source_ledger_file_id": "1UKOkiU0GjH42e1ogjBIFZSnERuxA7Ork",
+      "drive_quality_control_file_id": "1XtgYxKuiy4i87FXdge33_ehVf0IE6xMx",
+      "drive_visual_asset_file_id": "1qgLa6e_yZSMJBMgEGKPLdkP7hP3qCNiD",
+      "completed_at": "2026-08-25T04:45:14.285Z"
     },
     {
       "reel_id": "Reel_0005",
@@ -371,5 +377,5 @@
       "public_post_status": "NOT_REQUESTED"
     }
   ],
-  "last_updated": "2026-08-25T04:23:17.936Z"
+  "last_updated": "2026-08-25T04:45:14.285Z"
 }
