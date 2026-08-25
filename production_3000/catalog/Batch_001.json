@@ -37,9 +37,14 @@
       "editorial_lens": "Mechanism",
       "audience_context": "Home",
       "source_classification_required": "RESEARCH_REQUIRED",
-      "status": "PLANNED",
-      "drive_upload_verified": false,
-      "public_post_status": "NOT_REQUESTED"
+      "status": "COMPLETED_DRIVE_VERIFIED",
+      "drive_upload_verified": true,
+      "public_post_status": "NOT_REQUESTED",
+      "drive_video_file_id": "17iQo5as1qOLYuJry0LX1SexzbwjoK0tA",
+      "drive_metadata_file_id": "1En4WRvg4-2KvEiN5AXBEmkEu5bTgfLw3",
+      "drive_source_ledger_file_id": "1fBHFZ42qCNwwYtUg4aHw9h7cFVFT67NN",
+      "drive_quality_control_file_id": "1d8nNpQdzHyLXuxWlxSEwth729rVEOy3P",
+      "completed_at": "2026-08-25T04:23:17.936Z"
     },
     {
       "reel_id": "Reel_0004",
@@ -365,5 +370,6 @@
       "drive_upload_verified": false,
       "public_post_status": "NOT_REQUESTED"
     }
-  ]
+  ],
+  "last_updated": "2026-08-25T04:23:17.936Z"
 }

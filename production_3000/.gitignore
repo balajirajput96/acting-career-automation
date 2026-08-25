@@ -5,3 +5,7 @@ video_projects/**/snapshots/
 video_projects/**/assets/voice/
 video_projects/**/assets/*.png
 video_projects/**/assets/*.jpg
+# Recovery render intermediates are regenerated from the committed segment script.
+video_projects/**/segments/
+video_projects/**/index-segment-*.html
+video_projects/**/pnpm-workspace.yaml

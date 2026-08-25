@@ -1,0 +1,6 @@
+{
+  "tts_provider":"manus-generate_speech",
+  "voice_id":"Charon",
+  "voices":[{"id":"reel-0003-home-attention-reset","path":"assets/voice/reel-0003-home-attention-reset.wav","duration_s":52.04,"words":[]}],
+  "sfx":[],"bgm":null,"total_duration_s":52.04
+}

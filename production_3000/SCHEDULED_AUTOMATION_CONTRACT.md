@@ -7,3 +7,7 @@ The schedule must read `progress/MASTER_PROGRESS.json` first and write only to c
 The recurring task also retains its bounded casting-research controls: at most 10 sources per run and 20 per day; only public, official, clear-route opportunities may be shortlisted; no automatic submissions or communications are allowed.
 
 > Google Drive upload is a required internal completion step. Public social publication is not part of automatic completion. Facebook or Instagram requires the exact destination account, final caption, and action-specific confirmation at the time of posting.
+
+## Render recovery rule
+
+If a full-length local render fails or is interrupted under memory pressure, the run must not mark the Reel complete and must not start another slot. Preserve the source project and QC artifacts, record the failure in `progress/ERROR_RETRY_LOG.md`, then retry the same Reel using a deterministic low-memory fallback: one worker, 24 fps, short editable segments, final timestamp-safe re-encode, full integrity check, and canonical Drive verification. Only after that complete verification may the catalog advance.

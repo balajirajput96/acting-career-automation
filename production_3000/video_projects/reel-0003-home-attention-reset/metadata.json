@@ -1,0 +1,37 @@
+{
+  "reel_id": "Reel_0003",
+  "batch_id": "Batch_001",
+  "topic_family": "Psychology",
+  "subtopic": "Attention",
+  "editorial_lens": "Mechanism",
+  "audience_context": "Home",
+  "content_classification": "SCIENTIFIC_EVIDENCE_PLUS_EXPERT_INTERPRETATION",
+  "source_ledger": "../../source_ledgers/Reel_0003_home_attention_reset.md",
+  "status": "COMPLETED_DRIVE_VERIFIED",
+  "drive": {
+    "canonical_root_id": "1s8HhWxw2k1n57lhMyLmIT30Ln6y8rnc4",
+    "batch_folder_id": "121vsXW12kdezsR_47uJ0gTebetMGyUn-",
+    "upload_verified": true,
+    "video_file_id": "17iQo5as1qOLYuJry0LX1SexzbwjoK0tA",
+    "metadata_file_id": "1En4WRvg4-2KvEiN5AXBEmkEu5bTgfLw3",
+    "source_ledger_file_id": "1fBHFZ42qCNwwYtUg4aHw9h7cFVFT67NN",
+    "quality_control_file_id": "1d8nNpQdzHyLXuxWlxSEwth729rVEOy3P",
+    "visual_asset_file_id": "17M6HvirS4wYAaX2B_ugJ3RiZ6pnCyqSm",
+    "visual_asset_md5": "8f3a78c6bd7afc760a8d2a36be305c17",
+    "video_md5": "ac662fbd801944b1ef5579c8c1bb699c",
+    "video_size_bytes": 3606200,
+    "verified_at": "2026-08-25T04:23:17.936Z"
+  },
+  "public_post_status": "NOT_REQUESTED",
+  "render": {
+    "file": "renders/reel-0003-home-attention-reset.mp4",
+    "duration_seconds": 60.041667,
+    "width": 1080,
+    "height": 1920,
+    "video_codec": "h264",
+    "audio_codec": "aac",
+    "sha256": "61adfdac03251619e336d929731c334818a537ae5709298e01194b27c7875b8b",
+    "recovery_method": "two validated low-memory render segments, deterministic final re-encode"
+  },
+  "completed_at": "2026-08-25T04:23:17.936Z"
+}
