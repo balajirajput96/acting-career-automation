@@ -1,5 +1,11 @@
 import os
-from tracker_utils import get_csv_data, get_github_repo
+
+try:
+    from tracker_utils import get_csv_data, get_github_repo
+except ModuleNotFoundError as exc:
+    if exc.name != "tracker_utils":
+        raise
+    from scripts.tracker_utils import get_csv_data, get_github_repo
 
 def load_template(name):
     path = f'templates/{name}.md'

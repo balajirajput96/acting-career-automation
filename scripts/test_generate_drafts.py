@@ -1,5 +1,11 @@
 import unittest
-from generate_drafts import fill_template
+
+try:
+    from generate_drafts import fill_template
+except ModuleNotFoundError as exc:
+    if exc.name != "generate_drafts":
+        raise
+    from scripts.generate_drafts import fill_template
 
 class TestGenerateDrafts(unittest.TestCase):
     def test_fill_template(self):
