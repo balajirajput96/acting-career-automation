@@ -18,6 +18,9 @@ def check_scam(row):
     if not project or project == 'unknown' or len(project) < 3:
         warnings.append("⚠️ Missing or vague project name.")
 
+    if not contact:
+        warnings.append("⚠️ Missing contact information.")
+
     return warnings
 
 def main():
