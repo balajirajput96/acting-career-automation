@@ -50,5 +50,15 @@ class TestParseLeads(unittest.TestCase):
         warnings = check_scam(lead)
         self.assertEqual(len(warnings), 3)
 
+    def test_check_scam_missing_contact(self):
+        lead = {
+            'contact': '',
+            'notes': 'Looking for actors.',
+            'project': 'Big Feature Film'
+        }
+        warnings = check_scam(lead)
+        self.assertEqual(len(warnings), 1)
+        self.assertIn("Missing contact information", warnings[0])
+
 if __name__ == '__main__':
     unittest.main()

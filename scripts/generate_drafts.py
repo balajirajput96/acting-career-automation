@@ -6,6 +6,7 @@ def load_template(name):
     if os.path.exists(path):
         with open(path, 'r') as f:
             return f.read()
+    print(f"Warning: Template {name}.md not found.")
     return ""
 
 def fill_template(template, lead):
@@ -41,8 +42,8 @@ def main():
                 break
         
         if matching_lead:
-            email_draft = fill_template(email_tmpl, matching_lead)
-            dm_draft = fill_template(dm_tmpl, matching_lead)
+            email_draft = fill_template(email_tmpl, matching_lead) if email_tmpl else "Warning: email_template.md not found."
+            dm_draft = fill_template(dm_tmpl, matching_lead) if dm_tmpl else "Warning: dm_template.md not found."
             
             draft_body = f"""
 ---
