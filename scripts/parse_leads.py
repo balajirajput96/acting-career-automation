@@ -24,7 +24,7 @@ def check_scam(row):
     return warnings
 
 def main():
-    csv_path = 'data/casting_leads.csv'
+    csv_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'data', 'casting_leads.csv')
     leads = get_csv_data(csv_path)
     repo = get_github_repo()
     

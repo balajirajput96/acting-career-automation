@@ -27,3 +27,4 @@ videos/*/node_modules/
 videos/*/assets/
 videos/*/renders/
 videos/*/snapshots/
+.coverage

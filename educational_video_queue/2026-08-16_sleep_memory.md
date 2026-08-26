@@ -63,9 +63,6 @@ Explain in plain language that sleep supports memory formation and retention aft
 
 | Asset | Internal reference URL |
 | --- | --- |
-| Primary study-desk visual anchor | `/manus-storage/sleep-memory-primary-visual-anchor_958e383c.png` |
-| Abstract neural-path scene | `/manus-storage/sleep-memory-neural-paths_9b7a5578.png` |
-| Notebook takeaway scene | `/manus-storage/sleep-memory-notebook-takeaway_1091c4fd.png` |
 
 ## Review Queue Metadata
 

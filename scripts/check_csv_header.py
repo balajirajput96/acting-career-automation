@@ -26,5 +26,6 @@ def validate_csv_header(file_path):
     print(f"Success: {file_path} header is valid.")
 
 if __name__ == "__main__":
-    validate_csv_header('data/casting_leads.csv')
-    validate_csv_header('data/casting_leads.sample.csv')
+    base_dir = os.path.dirname(os.path.dirname(__file__))
+    validate_csv_header(os.path.join(base_dir, 'data', 'casting_leads.csv'))
+    validate_csv_header(os.path.join(base_dir, 'data', 'casting_leads.sample.csv'))

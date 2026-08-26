@@ -8,7 +8,7 @@ except ModuleNotFoundError as exc:
     from scripts.tracker_utils import get_csv_data, get_github_repo
 
 def load_template(name):
-    path = f'templates/{name}.md'
+    path = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'templates', f'{name}.md')
     if os.path.exists(path):
         with open(path, 'r') as f:
             return f.read()
@@ -21,7 +21,7 @@ def fill_template(template, lead):
     return template
 
 def main():
-    csv_path = 'data/casting_leads.csv'
+    csv_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'data', 'casting_leads.csv')
     leads = get_csv_data(csv_path)
     repo = get_github_repo()
     
