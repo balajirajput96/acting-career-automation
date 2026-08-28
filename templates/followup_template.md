@@ -13,3 +13,5 @@ Thank you again for your time and consideration.
 
 Sincerely,
 [Your Name]
+[Your Email]
+[Your Phone Number]
