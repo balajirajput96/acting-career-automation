@@ -16,3 +16,5 @@ Thank you for your time and consideration. I look forward to the possibility of 
 Sincerely,
 [Your Name]
 [Your Contact Information]
+[Your Email]
+[Your Phone Number]
