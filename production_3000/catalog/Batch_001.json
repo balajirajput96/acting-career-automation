@@ -72,9 +72,15 @@
       "editorial_lens": "Mechanism",
       "audience_context": "Transition",
       "source_classification_required": "RESEARCH_REQUIRED",
-      "status": "PLANNED",
-      "drive_upload_verified": false,
-      "public_post_status": "NOT_REQUESTED"
+      "status": "COMPLETED_DRIVE_VERIFIED",
+      "drive_upload_verified": true,
+      "public_post_status": "NOT_REQUESTED",
+      "drive_video_file_id": "1eoY7RgmmFiH-JbGa1bYLYjRxv1IjTkOH",
+      "drive_metadata_file_id": "1ZKJF19hd5wectMPsvkmcyAK3pJByt44E",
+      "drive_source_ledger_file_id": "1OWrkcMVjDrb3SoYGmHpqlStmR3S-gsuD",
+      "drive_quality_control_file_id": "1ziwlMf26ly5pi54qjPGB8doBsUKdY9nK",
+      "drive_visual_asset_file_id": "1F4FOjp8b2OSj3n2Csh6pe7PNCBPYmloa",
+      "completed_at": "2026-08-28T01:02:14.362Z"
     },
     {
       "reel_id": "Reel_0006",
@@ -377,5 +383,5 @@
       "public_post_status": "NOT_REQUESTED"
     }
   ],
-  "last_updated": "2026-08-25T04:45:14.285Z"
+  "last_updated": "2026-08-28T01:02:14.362Z"
 }

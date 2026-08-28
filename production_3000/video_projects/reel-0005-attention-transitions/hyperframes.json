@@ -1,0 +1,10 @@
+{
+  "name": "reel-0005-attention-transitions",
+  "format": "portrait",
+  "width": 1080,
+  "height": 1920,
+  "fps": 24,
+  "duration": 60,
+  "entry": "index.html",
+  "description": "Faceless Hindi research explainer about attention mechanisms during task transitions."
+}

@@ -1,0 +1,22 @@
+{
+  "tts_provider": "manus-generate_speech",
+  "voice_id": "Charon",
+  "language_code": "hi-IN",
+  "generation_policy": "neutral_synthetic_hindi_only_no_user_voice_asset",
+  "voices": [
+    {
+      "id": "01",
+      "path": "assets/voice/narration.wav",
+      "duration_s": 58.8,
+      "words": []
+    }
+  ],
+  "captions": {
+    "method": "manually authored, time-locked Hindi scene captions in index.html",
+    "word_timestamps": "unavailable",
+    "fallback_reason": "The permitted local transcription utility returned no usable output for this Hindi narration; the Reel retains complete scene-level captions and does not claim word-level timing."
+  },
+  "bgm": null,
+  "sfx": [],
+  "total_duration_s": 58.8
+}

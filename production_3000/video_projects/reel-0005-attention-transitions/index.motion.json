@@ -1,0 +1,10 @@
+{
+  "duration": 60,
+  "assertions": [
+    { "kind": "appearsBy", "selector": "#s1 h1", "bySec": 1 },
+    { "kind": "appearsBy", "selector": "#s2 .station.one", "bySec": 10 },
+    { "kind": "appearsBy", "selector": "#s5 .rule.new", "bySec": 33 },
+    { "kind": "appearsBy", "selector": "#s7 .limit-card", "bySec": 51 },
+    { "kind": "staysInFrame", "selector": "#s7 .limit-card" }
+  ]
+}

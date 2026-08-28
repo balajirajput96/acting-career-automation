@@ -1,0 +1,14 @@
+{
+  "name": "reel-0005-attention-transitions",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "lint": "hyperframes lint",
+    "check": "hyperframes check",
+    "snapshot": "hyperframes snapshot --at 4,11,18,25,34,44,53,58",
+    "render": "hyperframes render --quality high --output renders/reel-0005-attention-transitions.mp4"
+  },
+  "dependencies": {
+    "hyperframes": "^0.8.16"
+  }
+}

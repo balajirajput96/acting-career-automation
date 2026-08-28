@@ -1,0 +1,47 @@
+{
+  "reel_id": "Reel_0005",
+  "batch_id": "Batch_001",
+  "title_hi": "ध्यान एक बटन नहीं: काम बदलते समय क्या बदलता है?",
+  "topic_family": "Psychology",
+  "subtopic": "Attention",
+  "editorial_lens": "Mechanism",
+  "audience_context": "Transition",
+  "status": "COMPLETED_DRIVE_VERIFIED",
+  "format": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 24,
+    "target_duration_s": 60,
+    "actual_duration_s": 60.032,
+    "video_codec": "h264",
+    "audio_codec": "aac"
+  },
+  "render": {
+    "path": "renders/reel-0005-attention-transitions.mp4",
+    "size_bytes": 4056499,
+    "md5": "c5411a18bc522e9440bec3d58e557da3",
+    "method": "two self-contained 24-fps one-worker low-memory segments; timestamp-safe FFmpeg re-encode"
+  },
+  "source_ledger": "production_3000/source_ledgers/Reel_0005_attention_transition.md",
+  "narration_policy": "neutral_synthetic_hindi_only",
+  "public_post_status": "NOT_REQUESTED",
+  "drive": {
+    "canonical_root_id": "1s8HhWxw2k1n57lhMyLmIT30Ln6y8rnc4",
+    "duplicate_root_id": "1vYLRarvedtfaYzNcINGKpKAeeFaz0OnD",
+    "duplicate_root_write_prohibited": true,
+    "batch_folder_id": "121vsXW12kdezsR_47uJ0gTebetMGyUn-",
+    "assets_folder_id": "1WAYNhkIqt1CT4f9FcgYMWc93twYdRdFT",
+    "upload_verified": true,
+    "video_file_id": "1eoY7RgmmFiH-JbGa1bYLYjRxv1IjTkOH",
+    "metadata_file_id": "1ZKJF19hd5wectMPsvkmcyAK3pJByt44E",
+    "source_ledger_file_id": "1OWrkcMVjDrb3SoYGmHpqlStmR3S-gsuD",
+    "quality_control_file_id": "1ziwlMf26ly5pi54qjPGB8doBsUKdY9nK",
+    "visual_asset_file_id": "1F4FOjp8b2OSj3n2Csh6pe7PNCBPYmloa",
+    "video_md5": "c5411a18bc522e9440bec3d58e557da3",
+    "video_size_bytes": 4056499,
+    "visual_asset_md5": "662821c9dd4545f591c820d84b4fdde7",
+    "visual_asset_size_bytes": 3975041,
+    "verified_at": "2026-08-28T01:02:14.362Z"
+  },
+  "completed_at": "2026-08-28T01:02:14.362Z"
+}
