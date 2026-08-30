@@ -9,7 +9,6 @@ from pathlib import Path
 
 from validate_video_queue import validate_video_queue
 
-
 ROOT = Path(__file__).resolve().parents[1]
 EXPECTED_LEAD_HEADER = [
     "id",
@@ -65,9 +64,15 @@ def validate_lead_header() -> None:
 
 
 def validate_templates() -> None:
-    email_template = (ROOT / "templates" / "email_template.md").read_text(encoding="utf-8")
+    email_template = (ROOT / "templates" / "email_template.md").read_text(
+        encoding="utf-8"
+    )
     required_placeholders = ("{{name}}", "{{role}}", "{{source}}", "{{project}}")
-    missing = [placeholder for placeholder in required_placeholders if placeholder not in email_template]
+    missing = [
+        placeholder
+        for placeholder in required_placeholders
+        if placeholder not in email_template
+    ]
     if missing:
         fail(f"Email template is missing placeholders: {', '.join(missing)}")
 
@@ -86,17 +91,25 @@ def validate_execution_records() -> None:
         "validation_status",
         "remaining_blocker",
     }
-    lines = [line for line in records_path.read_text(encoding="utf-8").splitlines() if line.strip()]
+    lines = [
+        line
+        for line in records_path.read_text(encoding="utf-8").splitlines()
+        if line.strip()
+    ]
     if not lines:
         fail("automation_run_records.jsonl must contain at least one record")
     for number, line in enumerate(lines, start=1):
         try:
             record = json.loads(line)
         except json.JSONDecodeError as error:
-            fail(f"Invalid JSON in automation_run_records.jsonl line {number}: {error.msg}")
+            fail(
+                f"Invalid JSON in automation_run_records.jsonl line {number}: {error.msg}"
+            )
         missing = sorted(required_keys - set(record))
         if missing:
-            fail(f"Automation run record line {number} is missing keys: {', '.join(missing)}")
+            fail(
+                f"Automation run record line {number} is missing keys: {', '.join(missing)}"
+            )
 
 
 def main() -> None:
@@ -105,7 +118,9 @@ def main() -> None:
     validate_templates()
     validate_execution_records()
     validate_video_queue()
-    print("PASS: Toolkit files, lead schema, templates, and internal AI workflow assets are valid.")
+    print(
+        "PASS: Toolkit files, lead schema, templates, and internal AI workflow assets are valid."
+    )
 
 
 if __name__ == "__main__":

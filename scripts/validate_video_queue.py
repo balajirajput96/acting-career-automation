@@ -4,7 +4,6 @@ from __future__ import annotations
 
 from pathlib import Path
 
-
 ROOT = Path(__file__).resolve().parents[1]
 QUEUE_DIR = ROOT / "educational_video_queue"
 PRIMARY_PATTERN = "20??-??-??_*.md"
@@ -51,7 +50,9 @@ def validate_video_queue() -> None:
         if "NOT PUBLISHED" not in content or PROHIBITED_READY_STATE in content.replace(
             "NOT PUBLISHED", ""
         ):
-            fail(f"{package.name} does not preserve the internal-review publishing boundary")
+            fail(
+                f"{package.name} does not preserve the internal-review publishing boundary"
+            )
 
     if BATCH_DIR.exists():
         batch_packages = sorted(
@@ -67,9 +68,13 @@ def validate_video_queue() -> None:
             if "http" not in content:
                 fail(f"{package.name} has no authoritative source URL")
             if "INTERNAL REVIEW ONLY" not in content or "NOT POSTED" not in content:
-                fail(f"{package.name} does not preserve the batch internal-review boundary")
+                fail(
+                    f"{package.name} does not preserve the batch internal-review boundary"
+                )
 
 
 if __name__ == "__main__":
     validate_video_queue()
-    print("PASS: Internal educational-video review packages are complete and not published.")
+    print(
+        "PASS: Internal educational-video review packages are complete and not published."
+    )

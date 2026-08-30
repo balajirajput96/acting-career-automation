@@ -11,21 +11,26 @@ except ModuleNotFoundError as exc:
         raise
     from scripts.check_csv_header import validate_csv_header, EXPECTED_HEADER
 
+
 class TestCheckCSVHeader(unittest.TestCase):
     def setUp(self):
         # Create temporary files
-        self.fd_valid, self.path_valid = tempfile.mkstemp(suffix='.csv')
-        self.fd_invalid, self.path_invalid = tempfile.mkstemp(suffix='.csv')
-        self.fd_empty, self.path_empty = tempfile.mkstemp(suffix='.csv')
+        self.fd_valid, self.path_valid = tempfile.mkstemp(suffix=".csv")
+        self.fd_invalid, self.path_invalid = tempfile.mkstemp(suffix=".csv")
+        self.fd_empty, self.path_empty = tempfile.mkstemp(suffix=".csv")
 
         # Write valid header
-        with os.fdopen(self.fd_valid, 'w', encoding='utf-8') as f:
-            f.write(','.join(EXPECTED_HEADER) + '\n')
-            f.write('1,2026-07-01,Backstage,The Great Gatsby,Jay Gatsby,Email,casting@greatgatsby.com,SENT,Sent reel.\n')
+        with os.fdopen(self.fd_valid, "w", encoding="utf-8") as f:
+            f.write(",".join(EXPECTED_HEADER) + "\n")
+            f.write(
+                "1,2026-07-01,Backstage,The Great Gatsby,Jay Gatsby,Email,casting@greatgatsby.com,SENT,Sent reel.\n"
+            )
 
         # Write invalid header
-        with os.fdopen(self.fd_invalid, 'w', encoding='utf-8') as f:
-            f.write('id,date_found,source,wrong_column,role,contact_type,contact,status,notes\n')
+        with os.fdopen(self.fd_invalid, "w", encoding="utf-8") as f:
+            f.write(
+                "id,date_found,source,wrong_column,role,contact_type,contact,status,notes\n"
+            )
 
         # Leave the empty one empty
         os.close(self.fd_empty)
@@ -54,8 +59,9 @@ class TestCheckCSVHeader(unittest.TestCase):
 
     def test_validate_csv_header_non_existent(self):
         with self.assertRaises(SystemExit) as cm:
-            validate_csv_header('non_existent_file.csv')
+            validate_csv_header("non_existent_file.csv")
         self.assertEqual(cm.exception.code, 1)
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     unittest.main()

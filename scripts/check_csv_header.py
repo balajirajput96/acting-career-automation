@@ -2,14 +2,25 @@ import csv
 import sys
 import os
 
-EXPECTED_HEADER = ["id", "date_found", "source", "project", "role", "contact_type", "contact", "status", "notes"]
+EXPECTED_HEADER = [
+    "id",
+    "date_found",
+    "source",
+    "project",
+    "role",
+    "contact_type",
+    "contact",
+    "status",
+    "notes",
+]
+
 
 def validate_csv_header(file_path):
     if not os.path.exists(file_path):
         print(f"Error: {file_path} does not exist.")
         sys.exit(1)
 
-    with open(file_path, 'r', encoding='utf-8') as f:
+    with open(file_path, "r", encoding="utf-8") as f:
         reader = csv.reader(f)
         header = next(reader, None)
 
@@ -25,7 +36,8 @@ def validate_csv_header(file_path):
 
     print(f"Success: {file_path} header is valid.")
 
+
 if __name__ == "__main__":
     base_dir = os.path.dirname(os.path.dirname(__file__))
-    validate_csv_header(os.path.join(base_dir, 'data', 'casting_leads.csv'))
-    validate_csv_header(os.path.join(base_dir, 'data', 'casting_leads.sample.csv'))
+    validate_csv_header(os.path.join(base_dir, "data", "casting_leads.csv"))
+    validate_csv_header(os.path.join(base_dir, "data", "casting_leads.sample.csv"))
