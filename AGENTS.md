@@ -16,7 +16,7 @@ This document outlines the behavior rules for any AI agents interacting with thi
 
 2.  **No Automatic Issue or Pull Request Closure:**
     *   AI agents must *never* automatically close GitHub Issues or Pull Requests.
-    *   The `reply_processor.py` script, and any other automation, is designed only to apply labels and facilitate movement on the Project board, not to close items.
+    *   The `scripts/reply_processor.py` script, and any other automation, is designed only to apply labels and facilitate movement on the Project board, not to close items.
     *   Issue closure is a manual action reserved for the repository owner.
 
 3.  **Project Board Interaction:**
@@ -24,7 +24,7 @@ This document outlines the behavior rules for any AI agents interacting with thi
     *   AI agents may suggest or facilitate movement of issues between columns on the GitHub Project board (v2) based on applied labels or comment commands (e.g., `/sent`, `/rejected`, `/callback`). However, direct programmatic movement of issues on the project board is currently a placeholder for manual action or requires specific project board automation rules to be set up by the user.
 
 4.  **Scam Red-Flagging:**
-    *   The `parse_leads.py` script, executed by AI agents, will actively check for potential scam indicators in new leads (e.g., requests for fees, use of generic email domains, missing project names).
+    *   The `scripts/parse_leads.py` script, executed by AI agents, will actively check for potential scam indicators in new leads (e.g., requests for fees, use of generic email domains, missing project names).
     *   If red flags are detected, the agent must apply a `warning` label to the corresponding GitHub Issue and include details in the issue body.
 
 5.  **No Unauthorized Modifications:**
