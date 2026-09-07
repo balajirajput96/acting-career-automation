@@ -1,14 +1,17 @@
+from unittest.mock import patch, MagicMock
 import unittest
 import os
 import csv
 import tempfile
+import sys
+
+# Ensure scripts dir is in path for all imports in tests
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 try:
-    from tracker_utils import get_csv_data, update_csv_status
-except ModuleNotFoundError as exc:
-    if exc.name != "tracker_utils":
-        raise
-    from scripts.tracker_utils import get_csv_data, update_csv_status
+    from scripts.tracker_utils import get_csv_data, update_csv_status, get_github_repo
+except ModuleNotFoundError:
+    from tracker_utils import get_csv_data, update_csv_status, get_github_repo
 
 
 class TestTrackerUtils(unittest.TestCase):
@@ -51,6 +54,45 @@ class TestTrackerUtils(unittest.TestCase):
     def test_update_csv_status_not_found(self):
         updated = update_csv_status(self.temp_path, "999", "REJECTED")
         self.assertFalse(updated)
+
+    @patch("os.getenv")
+    def test_get_github_repo_missing_vars(self, mock_getenv):
+        # Test when variables are missing
+        mock_getenv.return_value = None
+        repo = get_github_repo()
+        self.assertIsNone(repo)
+
+    @patch("os.getenv")
+    def test_get_github_repo_success(self, mock_getenv):
+        # Mock environment variables
+        def mock_env(key):
+            if key == "GITHUB_TOKEN":
+                return "fake_token"
+            if key == "GITHUB_REPOSITORY":
+                return "fake/repo"
+            return None
+
+        mock_getenv.side_effect = mock_env
+
+        try:
+            import scripts.tracker_utils as tu
+        except ModuleNotFoundError:
+            import tracker_utils as tu
+
+        # the problem is tracker_utils does not import Github until inside the function
+        # We need to mock sys.modules to mock the github module
+        mock_github_module = MagicMock()
+        mock_github_client = MagicMock()
+        mock_github_module.Github = MagicMock(return_value=mock_github_client)
+        mock_repo = MagicMock()
+        mock_github_client.get_repo.return_value = mock_repo
+
+        with patch.dict("sys.modules", {"github": mock_github_module}):
+            repo = tu.get_github_repo()
+
+            mock_github_module.Github.assert_called_once_with("fake_token")
+            mock_github_client.get_repo.assert_called_once_with("fake/repo")
+            self.assertEqual(repo, mock_repo)
 
 
 if __name__ == "__main__":
