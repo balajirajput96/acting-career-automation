@@ -1,7 +1,6 @@
 import unittest
 from unittest.mock import patch, MagicMock, mock_open
 
-import importlib
 import sys
 import os
 
@@ -102,10 +101,6 @@ class TestGenerateDrafts(unittest.TestCase):
     def test_main_no_repo(self, mock_get_github_repo):
         mock_get_github_repo.return_value = None
         main()  # Should return without doing anything
-
-
-import unittest
-from unittest.mock import patch, MagicMock
 
 
 class TestGenerateDraftsMain(unittest.TestCase):
