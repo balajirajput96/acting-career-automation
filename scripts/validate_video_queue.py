@@ -42,13 +42,18 @@ def validate_video_queue() -> None:
 
     for package in packages:
         content = package.read_text(encoding="utf-8")
-        missing = [marker for marker in REQUIRED_MARKERS if marker not in content]
+        missing = [
+            marker for marker in REQUIRED_MARKERS if marker not in content
+        ]
         if missing:
-            fail(f"{package.name} is missing required sections: {', '.join(missing)}")
+            fail(
+                f"{package.name} is missing required sections: {', '.join(missing)}"
+            )
         if "http" not in content:
             fail(f"{package.name} has no source URL in its research ledger")
-        if "NOT PUBLISHED" not in content or PROHIBITED_READY_STATE in content.replace(
-            "NOT PUBLISHED", ""
+        if (
+            "NOT PUBLISHED" not in content
+            or PROHIBITED_READY_STATE in content.replace("NOT PUBLISHED", "")
         ):
             fail(
                 f"{package.name} does not preserve the internal-review publishing boundary"
@@ -56,18 +61,29 @@ def validate_video_queue() -> None:
 
     if BATCH_DIR.exists():
         batch_packages = sorted(
-            package for package in BATCH_DIR.glob("*.md") if package.name != "INDEX.md"
+            package
+            for package in BATCH_DIR.glob("*.md")
+            if package.name != "INDEX.md"
         )
         if len(batch_packages) != 50:
-            fail(f"Expected 50 batch review packages; found {len(batch_packages)}")
+            fail(
+                f"Expected 50 batch review packages; found {len(batch_packages)}"
+            )
         for package in batch_packages:
             content = package.read_text(encoding="utf-8")
-            missing = [marker for marker in BATCH_MARKERS if marker not in content]
+            missing = [
+                marker for marker in BATCH_MARKERS if marker not in content
+            ]
             if missing:
-                fail(f"{package.name} is missing batch markers: {', '.join(missing)}")
+                fail(
+                    f"{package.name} is missing batch markers: {', '.join(missing)}"
+                )
             if "http" not in content:
                 fail(f"{package.name} has no authoritative source URL")
-            if "INTERNAL REVIEW ONLY" not in content or "NOT POSTED" not in content:
+            if (
+                "INTERNAL REVIEW ONLY" not in content
+                or "NOT POSTED" not in content
+            ):
                 fail(
                     f"{package.name} does not preserve the batch internal-review boundary"
                 )

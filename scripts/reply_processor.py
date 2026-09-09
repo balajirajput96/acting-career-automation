@@ -13,7 +13,9 @@ def main():
     comment_body = os.getenv("COMMENT_BODY")
 
     if not issue_number or not comment_body:
-        print("Error: Missing ISSUE_NUMBER or COMMENT_BODY environment variables.")
+        print(
+            "Error: Missing ISSUE_NUMBER or COMMENT_BODY environment variables."
+        )
         sys.exit(1)
 
     issue = repo.get_issue(int(issue_number))
