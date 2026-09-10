@@ -1,5 +1,3 @@
-import os
-import sys
 import unittest
 from unittest.mock import patch, MagicMock
 
@@ -94,7 +92,9 @@ class TestReplyProcessor(unittest.TestCase):
 
         reply_processor.main()
 
-        mock_issue.remove_from_labels.assert_called_once_with("lead-new", "lead-sent")
+        mock_issue.remove_from_labels.assert_called_once_with(
+            "lead-new", "lead-sent"
+        )
         mock_issue.add_to_labels.assert_called_once_with("lead-callback")
 
     @patch("reply_processor.get_github_repo")
@@ -117,7 +117,9 @@ class TestReplyProcessor(unittest.TestCase):
 
         reply_processor.main()
 
-        mock_issue.remove_from_labels.assert_called_once_with("follow-up-needed")
+        mock_issue.remove_from_labels.assert_called_once_with(
+            "follow-up-needed"
+        )
 
 
 if __name__ == "__main__":

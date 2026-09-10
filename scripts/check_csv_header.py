@@ -40,4 +40,6 @@ def validate_csv_header(file_path):
 if __name__ == "__main__":
     base_dir = os.path.dirname(os.path.dirname(__file__))
     validate_csv_header(os.path.join(base_dir, "data", "casting_leads.csv"))
-    validate_csv_header(os.path.join(base_dir, "data", "casting_leads.sample.csv"))
+    validate_csv_header(
+        os.path.join(base_dir, "data", "casting_leads.sample.csv")
+    )
