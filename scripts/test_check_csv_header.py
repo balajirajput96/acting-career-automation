@@ -1,8 +1,6 @@
 import unittest
 import os
 import tempfile
-import sys
-from io import StringIO
 
 try:
     from check_csv_header import validate_csv_header, EXPECTED_HEADER
@@ -45,7 +43,9 @@ class TestCheckCSVHeader(unittest.TestCase):
         try:
             validate_csv_header(self.path_valid)
         except SystemExit:
-            self.fail("validate_csv_header exited unexpectedly for a valid file.")
+            self.fail(
+                "validate_csv_header exited unexpectedly for a valid file."
+            )
 
     def test_validate_csv_header_invalid(self):
         with self.assertRaises(SystemExit) as cm:
