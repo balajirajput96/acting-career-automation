@@ -1,6 +1,5 @@
-import sys
 import unittest
-from datetime import datetime, timedelta
+from datetime import datetime
 from unittest.mock import patch, MagicMock
 
 import follow_up_tracker
@@ -60,9 +59,13 @@ class TestFollowUpTracker(unittest.TestCase):
 
         follow_up_tracker.main()
 
-        mock_repo.get_issues.assert_called_once_with(state="open", labels=["lead-sent"])
+        mock_repo.get_issues.assert_called_once_with(
+            state="open", labels=["lead-sent"]
+        )
 
-        mock_issue_old.add_to_labels.assert_called_once_with("follow-up-needed")
+        mock_issue_old.add_to_labels.assert_called_once_with(
+            "follow-up-needed"
+        )
         mock_issue_old.create_comment.assert_called_once()
 
         mock_issue_new.add_to_labels.assert_not_called()
