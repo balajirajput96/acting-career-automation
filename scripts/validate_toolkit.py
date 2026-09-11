@@ -4,7 +4,7 @@ from __future__ import annotations
 
 import csv
 import json
-import sys
+
 from pathlib import Path
 
 from validate_video_queue import validate_video_queue
@@ -67,7 +67,12 @@ def validate_templates() -> None:
     email_template = (ROOT / "templates" / "email_template.md").read_text(
         encoding="utf-8"
     )
-    required_placeholders = ("{{name}}", "{{role}}", "{{source}}", "{{project}}")
+    required_placeholders = (
+        "{{name}}",
+        "{{role}}",
+        "{{source}}",
+        "{{project}}",
+    )
     missing = [
         placeholder
         for placeholder in required_placeholders

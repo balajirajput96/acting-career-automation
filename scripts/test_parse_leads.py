@@ -119,7 +119,9 @@ class TestParseLeads(unittest.TestCase):
         self.assertEqual(mock_repo.create_issue.call_count, 2)
 
         mock_issue1.add_to_labels.assert_called_with("lead-new")
-        self.assertNotIn(call("warning"), mock_issue1.add_to_labels.call_args_list)
+        self.assertNotIn(
+            call("warning"), mock_issue1.add_to_labels.call_args_list
+        )
 
         mock_issue2.add_to_labels.assert_any_call("warning")
         mock_issue2.add_to_labels.assert_any_call("lead-new")

@@ -1,7 +1,7 @@
 import unittest
 from unittest.mock import patch, MagicMock, mock_open
 
-import importlib
+
 import sys
 import os
 
@@ -17,9 +17,15 @@ except ModuleNotFoundError:
 class TestGenerateDrafts(unittest.TestCase):
     def test_fill_template(self):
         template = "Hello {{name}}, role: {{role}}, project: {{project}}"
-        lead = {"name": "Jane Doe", "role": "Lead Actress", "project": "Indie Film"}
+        lead = {
+            "name": "Jane Doe",
+            "role": "Lead Actress",
+            "project": "Indie Film",
+        }
 
-        expected_output = "Hello Jane Doe, role: Lead Actress, project: Indie Film"
+        expected_output = (
+            "Hello Jane Doe, role: Lead Actress, project: Indie Film"
+        )
         result = fill_template(template, lead)
         self.assertEqual(result, expected_output)
 
@@ -31,7 +37,9 @@ class TestGenerateDrafts(unittest.TestCase):
         self.assertEqual(result, expected_output)
 
     @patch("os.path.exists")
-    @patch("builtins.open", new_callable=mock_open, read_data="template content")
+    @patch(
+        "builtins.open", new_callable=mock_open, read_data="template content"
+    )
     def test_load_template_exists(self, mock_open, mock_exists):
         mock_exists.return_value = True
         content = load_template("dummy_template")
@@ -50,7 +58,9 @@ class TestGenerateDrafts(unittest.TestCase):
     @patch(f"{generate_drafts.__name__}.get_github_repo")
     @patch(f"{generate_drafts.__name__}.get_csv_data")
     @patch(f"{generate_drafts.__name__}.load_template")
-    def test_main(self, mock_load_template, mock_get_csv_data, mock_get_github_repo):
+    def test_main(
+        self, mock_load_template, mock_get_csv_data, mock_get_github_repo
+    ):
         mock_repo = MagicMock()
         mock_get_github_repo.return_value = mock_repo
 
@@ -69,7 +79,11 @@ class TestGenerateDrafts(unittest.TestCase):
         mock_issue3.title = "Unknown Project - Lead Role"
         mock_issue3.number = 3
 
-        mock_repo.get_issues.return_value = [mock_issue1, mock_issue2, mock_issue3]
+        mock_repo.get_issues.return_value = [
+            mock_issue1,
+            mock_issue2,
+            mock_issue3,
+        ]
 
         mock_get_csv_data.return_value = [
             {
@@ -102,10 +116,6 @@ class TestGenerateDrafts(unittest.TestCase):
     def test_main_no_repo(self, mock_get_github_repo):
         mock_get_github_repo.return_value = None
         main()  # Should return without doing anything
-
-
-import unittest
-from unittest.mock import patch, MagicMock
 
 
 class TestGenerateDraftsMain(unittest.TestCase):
