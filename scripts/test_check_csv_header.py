@@ -1,8 +1,6 @@
 import unittest
 import os
 import tempfile
-import sys
-from io import StringIO
 
 try:
     from check_csv_header import validate_csv_header, EXPECTED_HEADER

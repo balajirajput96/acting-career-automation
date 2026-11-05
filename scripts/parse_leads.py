@@ -41,9 +41,7 @@ def main():
 
     for lead in new_leads:
         warnings = check_scam(lead)
-        warning_text = (
-            "\n".join(warnings) if warnings else "No red flags detected."
-        )
+        warning_text = "\n".join(warnings) if warnings else "No red flags detected."
 
         title = f"[NEW LEAD] {lead['project']} - {lead['role']}"
         body = f"""
